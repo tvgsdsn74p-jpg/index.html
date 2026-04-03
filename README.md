@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Saúde da Mulher - Projeto ODS 4</title>
+<title>Saúde da Mulher - ODS 4</title>
 
 <style>
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: #e91e63;
+    background: #d81b60;
     color: white;
     text-align: center;
     padding: 20px;
@@ -39,8 +39,9 @@ section {
 
 .banner {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    max-height: 220px;
+    object-fit: contain;
+    background: white;
 }
 
 .card {
@@ -52,7 +53,7 @@ section {
 }
 
 h2 {
-    color: #e91e63;
+    color: #d81b60;
 }
 
 button {
@@ -60,7 +61,7 @@ button {
     padding: 10px;
     border-radius: 10px;
     border: none;
-    background: #e91e63;
+    background: #d81b60;
     color: white;
 }
 </style>
@@ -83,11 +84,11 @@ function resultado(){
     let msg = "";
 
     if(pontos <= 4){
-        msg = "Você precisa reforçar seus conhecimentos 😢";
+        msg = "Você precisa estudar mais 😢";
     } else if(pontos <= 7){
-        msg = "Você tem um bom conhecimento 👍";
+        msg = "Você está no caminho certo 👍";
     } else {
-        msg = "Excelente! Você domina o assunto 👏💖";
+        msg = "Excelente conhecimento! 👏💖";
     }
 
     document.getElementById("res").innerHTML =
@@ -101,7 +102,7 @@ function resultado(){
 
 <header>
 <h1>🌸 Saúde da Mulher</h1>
-<p>Projeto Educativo - ODS 4</p>
+<p>Educação em saúde - ODS 4</p>
 </header>
 
 <nav>
@@ -113,71 +114,77 @@ function resultado(){
 </nav>
 
 <section id="inicio">
-<img class="banner" src="https://images.unsplash.com/photo-1584515933487-779824d29309">
+<img class="banner" src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png">
 <div class="card">
-<h2>Bem-vinda</h2>
-<p>Este projeto tem como objetivo promover a educação em saúde da mulher, contribuindo para o conhecimento, prevenção de doenças e melhoria da qualidade de vida.</p>
+<h2>Educação em Saúde da Mulher</h2>
 
-<p>A informação é uma das principais ferramentas para o autocuidado. Muitas doenças podem ser evitadas ou tratadas precocemente quando a mulher conhece seu próprio corpo e reconhece sinais de alerta.</p>
+<p>Este projeto tem como objetivo promover a educação em saúde da mulher, alinhado à ODS 4, que busca garantir educação de qualidade para todos.</p>
+
+<p>A saúde feminina envolve cuidados físicos, emocionais e preventivos. Ter acesso à informação permite que a mulher reconheça sinais do próprio corpo e busque ajuda quando necessário.</p>
+
+<p>A educação em saúde é essencial para reduzir doenças, melhorar a qualidade de vida e incentivar o autocuidado.</p>
+
 </div>
 </section>
 
 <section id="cuidados">
-<img class="banner" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5">
+<img class="banner" src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png">
 <div class="card">
-<h2>Cuidados com a saúde</h2>
+<h2>Cuidados com a saúde íntima</h2>
 
-<p>A higiene íntima deve ser feita diariamente, utilizando produtos adequados e evitando exageros, pois o excesso também pode causar desequilíbrio.</p>
+<p>A higiene íntima deve ser feita de forma adequada, utilizando produtos suaves e evitando o uso excessivo de sabonetes íntimos, que podem alterar o equilíbrio natural da região.</p>
 
-<p>O uso de roupas leves e de algodão ajuda a evitar infecções, pois permite melhor ventilação da região íntima.</p>
+<p>O uso de roupas de algodão é recomendado, pois permite melhor ventilação e reduz a umidade, prevenindo infecções.</p>
 
-<p>Beber água e manter uma alimentação saudável também são fatores importantes para o funcionamento do organismo.</p>
+<p>É importante evitar roupas muito apertadas, pois elas aumentam o calor e a umidade, favorecendo o crescimento de microrganismos.</p>
 
-<p>Evitar roupas muito apertadas e permanecer muito tempo com roupas úmidas são cuidados essenciais.</p>
+<p>Além disso, manter uma alimentação equilibrada e boa hidratação contribui para o bom funcionamento do organismo.</p>
 
-<button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
 </section>
 
 <section id="sintomas">
-<img class="banner" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+<img class="banner" src="https://cdn-icons-png.flaticon.com/512/564/564619.png">
 <div class="card">
 <h2>Sintomas de alerta</h2>
 
-<p>Alguns sinais indicam que algo pode não estar bem:</p>
+<p>Alguns sinais indicam possíveis problemas de saúde e não devem ser ignorados.</p>
 
-<p>⚠ Corrimento com cor ou odor diferente</p>
-<p>⚠ Coceira intensa</p>
-<p>⚠ Ardência ao urinar</p>
-<p>⚠ Dor durante relações</p>
+<p>Corrimentos com cor amarelada, esverdeada ou com odor forte podem indicar infecções.</p>
 
-<p>Esses sintomas podem indicar infecções ou outras condições que precisam de avaliação profissional.</p>
+<p>Coceira intensa, ardência ou dor durante a relação também são sinais importantes.</p>
 
-<button onclick="mostrar('inicio')">⬅ Voltar</button>
+<p>Ardência ao urinar pode indicar infecção urinária.</p>
+
+<p>Ao perceber qualquer um desses sintomas, é fundamental procurar um profissional de saúde para avaliação adequada.</p>
+
 </div>
 </section>
 
 <section id="prevencao">
-<img class="banner" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef">
+<img class="banner" src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png">
 <div class="card">
 <h2>Prevenção</h2>
 
-<p>A prevenção é a melhor forma de cuidar da saúde.</p>
+<p>A prevenção é a principal forma de manter a saúde.</p>
 
 <p>O uso de preservativo é essencial para evitar infecções sexualmente transmissíveis.</p>
 
-<p>Consultas regulares ao ginecologista ajudam na detecção precoce de doenças.</p>
+<p>Consultas regulares ao ginecologista permitem a detecção precoce de doenças.</p>
 
-<p>Exames como o preventivo (Papanicolau) são fundamentais para a saúde feminina.</p>
+<p>Exames preventivos, como o Papanicolau, são fundamentais para prevenir o câncer do colo do útero.</p>
 
-<button onclick="mostrar('inicio')">⬅ Voltar</button>
+<p>Evitar a automedicação também é muito importante, pois pode mascarar sintomas e agravar problemas.</p>
+
 </div>
 </section>
 
 <section id="quiz">
-<img class="banner" src="https://images.unsplash.com/photo-1584697964190-7383cde1d19c">
+<img class="banner" src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
 <div class="card">
 <h2>Quiz Educativo</h2>
+
+<p>Teste seus conhecimentos:</p>
 
 <p>1. Higiene íntima é importante?</p>
 <button onclick="responder(true)">Sim</button>
@@ -191,9 +198,9 @@ function resultado(){
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
 
-<p>4. Corrimento diferente é normal?</p>
-<button onclick="responder(false)">Sim</button>
-<button onclick="responder(true)">Não</button>
+<p>4. Corrimento diferente pode indicar problema?</p>
+<button onclick="responder(true)">Sim</button>
+<button onclick="responder(false)">Não</button>
 
 <p>5. Dor ao urinar é sinal de alerta?</p>
 <button onclick="responder(true)">Sim</button>
@@ -203,7 +210,7 @@ function resultado(){
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
 
-<p>7. Consultar médico é importante?</p>
+<p>7. Consultas médicas são importantes?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
 
@@ -224,7 +231,6 @@ function resultado(){
 
 <p id="res"></p>
 
-<button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
 </section>
 
