@@ -76,6 +76,7 @@ function resultado(){
 
 <nav>
 <button onclick="mostrar('inicio')">🏠 Início</button>
+<button onclick="mostrar('projeto')">📚 Projeto</button>
 <button onclick="mostrar('cuidados')">🧼 Cuidados</button>
 <button onclick="mostrar('sintomas')">⚠️ Sintomas</button>
 <button onclick="mostrar('prevencao')">🛡️ Prevenção</button>
@@ -348,6 +349,36 @@ style="width: 220px; display: block; margin: 10px auto;">
 
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
+<section id="projeto">
+
+<div class="card">
+<h2>Projeto de Extensão</h2>
+
+<h3>Objetivo</h3>
+<p>Promover a educação em saúde da mulher por meio de um site informativo, facilitando o acesso ao conhecimento sobre prevenção, autocuidado e direitos relacionados à saúde.</p>
+
+<h3>Justificativa</h3>
+<p>A falta de informação sobre saúde feminina ainda é um problema que afeta muitas mulheres, especialmente em contextos de vulnerabilidade. Este projeto busca contribuir para a disseminação de conhecimento de forma acessível e digital.</p>
+
+<h3>Público-alvo</h3>
+<p>Mulheres jovens e adultas, estudantes e pessoas que buscam informações sobre saúde íntima, métodos contraceptivos e serviços de saúde.</p>
+
+<h3>Relação com a ODS 4</h3>
+<p>O projeto está alinhado com a ODS 4 – Educação de Qualidade, promovendo o acesso à informação e incentivando o aprendizado sobre saúde feminina.</p>
+
+<h3>Impacto Social</h3>
+<p>O projeto contribui para a conscientização, prevenção de doenças e melhoria da qualidade de vida, incentivando o autocuidado e o acesso aos serviços de saúde.</p>
+
+<h3>Conclusão</h3>
+<p>O uso da tecnologia como ferramenta educativa permite ampliar o alcance da informação e promover mudanças positivas na sociedade, especialmente na área da saúde da mulher.</p>
+
+<h3>Referências</h3>
+<p>Ministério da Saúde</p>
+<p>Organização Mundial da Saúde (OMS)</p>
+<p>Conteúdos educativos sobre saúde da mulher</p>
+
+</div>
+
 </section>
 </body>
 </html>
