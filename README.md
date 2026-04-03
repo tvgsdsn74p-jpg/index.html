@@ -4,7 +4,17 @@
 <meta charset="UTF-8">
 <title>Saúde da Mulher</title>
 
-<style>
+<style>section {
+    display: none;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active {
+    display: block;
+    opacity: 1;
+}
 body {
     font-family: Arial;
     margin: 0;
