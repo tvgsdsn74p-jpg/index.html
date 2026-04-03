@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -9,7 +8,7 @@
 body {
     font-family: Arial;
     margin: 0;
-    background: linear-gradient(to right, #ffe6f0, #fff);
+    background: linear-gradient(to right, #ffe6f0, #ffffff);
 }
 
 header {
@@ -61,18 +60,25 @@ function mostrar(secao) {
     document.getElementById(secao).classList.add("active");
 }
 
+let pontos = 0;
+
 function verificar() {
-    let resposta = document.querySelector('input[name="q1"]:checked');
-    if (!resposta) {
-        alert("Escolha uma resposta!");
+    pontos = 0;
+
+    let q1 = document.querySelector('input[name="q1"]:checked');
+    let q2 = document.querySelector('input[name="q2"]:checked');
+    let q3 = document.querySelector('input[name="q3"]:checked');
+
+    if (!q1 || !q2 || !q3) {
+        alert("Responda todas as perguntas!");
         return;
     }
 
-    if (resposta.value == "certo") {
-        alert("✅ Correto!");
-    } else {
-        alert("❌ Errado!");
-    }
+    if (q1.value == "certo") pontos++;
+    if (q2.value == "certo") pontos++;
+    if (q3.value == "certo") pontos++;
+
+    alert("Você acertou " + pontos + " de 3 perguntas!");
 }
 </script>
 
@@ -90,13 +96,14 @@ function verificar() {
 <button onclick="mostrar('cuidados')">Cuidados</button>
 <button onclick="mostrar('sintomas')">Sintomas</button>
 <button onclick="mostrar('mitos')">Mitos</button>
+<button onclick="mostrar('quando')">Quando ir ao médico</button>
 <button onclick="mostrar('quiz')">Quiz</button>
 </nav>
 
 <section id="inicio" class="active">
 <div class="card">
 <h2>Bem-vinda 💖</h2>
-<p>Este projeto tem como objetivo ensinar de forma simples sobre saúde íntima feminina, promovendo informação e prevenção.</p>
+<p>Este site foi criado para orientar mulheres sobre saúde íntima, promovendo informação, prevenção e educação.</p>
 </div>
 </section>
 
@@ -104,8 +111,8 @@ function verificar() {
 <div class="card">
 <h2>Cuidados básicos</h2>
 <p>✔ Higiene íntima diária</p>
-<p>✔ Uso de roupas confortáveis</p>
-<p>✔ Evitar produtos com cheiro forte</p>
+<p>✔ Usar roupas leves</p>
+<p>✔ Evitar duchas internas</p>
 <p>✔ Beber bastante água</p>
 </div>
 </section>
@@ -113,11 +120,10 @@ function verificar() {
 <section id="sintomas">
 <div class="card">
 <h2>Sinais de alerta</h2>
-<p>⚠ Corrimento com odor forte</p>
+<p>⚠ Corrimento com cheiro forte</p>
 <p>⚠ Coceira intensa</p>
 <p>⚠ Ardência ao urinar</p>
 <p>⚠ Dor durante relação</p>
-<p><b>Procure um profissional de saúde.</b></p>
 </div>
 </section>
 
@@ -125,10 +131,20 @@ function verificar() {
 <div class="card">
 <h2>Mitos e Verdades</h2>
 <p><b>❌ Mito:</b> Corrimento sempre é normal</p>
-<p><b>✔ Verdade:</b> Depende do cheiro e cor</p>
+<p><b>✔ Verdade:</b> Depende da cor e cheiro</p>
 
-<p><b>❌ Mito:</b> Só precisa ir ao ginecologista com dor</p>
+<p><b>❌ Mito:</b> Só precisa ir ao médico com dor</p>
 <p><b>✔ Verdade:</b> Consultas preventivas são essenciais</p>
+</div>
+</section>
+
+<section id="quando">
+<div class="card">
+<h2>Quando procurar um médico?</h2>
+<p>👉 Corrimento diferente</p>
+<p>👉 Dor persistente</p>
+<p>👉 Sangramento fora do período</p>
+<p>👉 Dúvidas ou insegurança</p>
 </div>
 </section>
 
@@ -136,12 +152,19 @@ function verificar() {
 <div class="card">
 <h2>Teste seu conhecimento</h2>
 
-<p>Corrimento com cheiro forte é normal?</p>
-
+<p>1. Corrimento com cheiro forte é normal?</p>
 <input type="radio" name="q1" value="errado"> Sim<br>
 <input type="radio" name="q1" value="certo"> Não<br><br>
 
-<button onclick="verificar()">Responder</button>
+<p>2. Higiene íntima deve ser feita diariamente?</p>
+<input type="radio" name="q2" value="certo"> Sim<br>
+<input type="radio" name="q2" value="errado"> Não<br><br>
+
+<p>3. Só deve ir ao médico quando sentir dor?</p>
+<input type="radio" name="q3" value="errado"> Sim<br>
+<input type="radio" name="q3" value="certo"> Não<br><br>
+
+<button onclick="verificar()">Ver resultado</button>
 
 </div>
 </section>
