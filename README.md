@@ -114,7 +114,7 @@ function resultado(){
 </nav>
 
 <section id="inicio">
-<img class="banner" src="https://images.vexels.com/media/users/3/141470/isolated/preview/1e1f3c827595635984be3f98f49c410c-avatar-de-perfil-de-mulher-1.png">
+<img class="banner" src="https://img.freepik.com/vetores-gratis/conceito-de-sistema-reprodutivo-feminino_52683-45450.jpg">
 <div class="card">
 <h2>Educação em Saúde da Mulher</h2>
 
