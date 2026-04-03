@@ -347,9 +347,7 @@ style="width: 220px; display: block; margin: 10px auto;">
 <p>O acesso à informação e aos métodos contraceptivos contribui para a saúde da mulher, autonomia e planejamento familiar.</p>
 
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
-
 </section>
-
 <section id="projeto">
 <div class="card">
 <h2>Projeto de Extensão</h2>
