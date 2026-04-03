@@ -10,62 +10,29 @@ body {
     margin: 0;
     background: #fff0f5;
 }
-
-header {
-    background: #d81b60;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-nav {
-    background: #f06292;
-    text-align: center;
-    padding: 10px;
-}
-
-nav button {
-    margin: 5px;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    background: white;
-    color: #d81b60;   /* 👈 ESSENCIAL */
-    font-weight: bold;
-}
-
-section {
-    display: none;
-}
-
-.banner {
+.menu-app {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    max-height: 220px;
-    object-fit: contain; /* 👈 ESSENCIAL */
-    background: white;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid #eee;
+    padding: 10px 0;
 }
 
-.card {
-    background: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 15px;
-    line-height: 1.6;
-}
-
-h2 {
-    color: #d81b60;
-}
-
-button {
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 10px;
+.menu-app button {
+    background: none;
     border: none;
-    background: #d81b60;
-    color: white;
+    font-size: 12px;
+    color: #d81b60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+body {
+    padding-bottom: 80px;}
 </style>
 
 <script>
