@@ -128,7 +128,7 @@ function resultado(){
 </section>
 
 <section id="cuidados">
-<img class="banner" src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png">
+<img class="banner" src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png">
 <div class="card">
 <h2>Cuidados com a saúde íntima</h2>
 
