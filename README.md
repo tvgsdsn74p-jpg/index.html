@@ -110,6 +110,7 @@ function resultado(){
 <button onclick="mostrar('cuidados')">🧼 Cuidados</button>
 <button onclick="mostrar('sintomas')">⚠️ Sintomas</button>
 <button onclick="mostrar('prevencao')">🛡️ Prevenção</button>
+<button onclick="mostrar('sistema')">🧬 Sistema</button>
 <button onclick="mostrar('quiz')">🧠 Quiz</button>
 </nav>
 
@@ -233,6 +234,25 @@ function resultado(){
 
 </div>
 </section>
+<section id="sistema">
+<img class="banner" src="https://png.pngtree.com/png-clipart/20201208/original/pngtree-female-reproductive-system-health-hand-drawn-png-image_5518539.jpg">
 
+<div class="card">
+<h2>Sistema Reprodutor Feminino</h2>
+
+<p>O sistema reprodutor feminino é responsável pela reprodução e pela produção de hormônios importantes para o corpo.</p>
+
+<p>Ele é composto por órgãos que trabalham juntos:</p>
+
+<p>• Ovários: produzem os óvulos e hormônios</p>
+<p>• Trompas de Falópio: transportam o óvulo</p>
+<p>• Útero: onde o bebê se desenvolve</p>
+<p>• Vagina: canal de saída e relação</p>
+
+<p>Conhecer o próprio corpo é essencial para identificar alterações e cuidar da saúde.</p>
+
+<button onclick="mostrar('inicio')">⬅ Voltar</button>
+</div>
+</section>
 </body>
 </html>
