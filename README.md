@@ -119,7 +119,7 @@ function verificar() {
 <button onclick="mostrar('quiz')">Quiz</button>
 </nav>
 
-<section id="inicio" class="active">
+<section id="inicio" class="active"><button onclick="mostrar('inicio')">⬅ Voltar</button>
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png" width="90">
 <h2>Bem-vinda 💖</h2>
@@ -127,7 +127,7 @@ function verificar() {
 </div>
 </section>
 
-<section id="cuidados">
+<section id="cuidados"><button onclick="mostrar('inicio')">⬅ Voltar</button>
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/2966/2966488.png" width="90">
 <h2>Cuidados básicos</h2>
@@ -137,7 +137,7 @@ function verificar() {
 </div>
 </section>
 
-<section id="sintomas">
+<section id="sintomas"><button onclick="mostrar('inicio')">⬅ Voltar</button>
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" width="90">
 <h2>Sintomas</h2>
@@ -147,7 +147,7 @@ function verificar() {
 </div>
 </section>
 
-<section id="mitos">
+<section id="mitos"><button onclick="mostrar('inicio')">⬅ Voltar</button>
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" width="90">
 <h2>Mitos e Verdades</h2>
@@ -156,7 +156,7 @@ function verificar() {
 </div>
 </section>
 
-<section id="quando">
+<section id="quando"><button onclick="mostrar('inicio')">⬅ Voltar</button>
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" width="90">
 <h2>Quando ir ao médico?</h2>
@@ -166,7 +166,7 @@ function verificar() {
 </div>
 </section>
 
-<section id="quiz">
+<section id="quiz"><button onclick="mostrar('inicio')">⬅ Voltar</button>
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="90">
 <h2>Quiz</h2>
