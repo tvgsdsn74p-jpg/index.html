@@ -123,7 +123,12 @@ function verificar() {
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png" width="90">
 <h2>Bem-vinda 💖</h2>
-<p>Informações simples sobre saúde feminina e autocuidado.</p>
+
+<img src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png" width="100">
+
+<p>Este projeto foi criado para ajudar mulheres a entender melhor seu corpo e sua saúde.</p>
+
+<p>Aqui você encontrará informações simples, seguras e importantes sobre cuidados íntimos, prevenção de doenças e quando procurar ajuda médica.</p>
 </div>
 </section>
 
