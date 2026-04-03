@@ -109,7 +109,7 @@ function resultado(){
 <section id="inicio">
 <div class="card">
 <h2>Bem-vinda 💖</h2>
-<img src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png">
+<img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png">
 <p>Este site educativo ajuda mulheres a entender melhor sua saúde.</p>
 <p>A informação é essencial para prevenção de doenças e bem-estar.</p>
 </div>
