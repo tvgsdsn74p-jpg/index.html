@@ -113,6 +113,7 @@ function resultado(){
 <button onclick="mostrar('sintomas')">⚠️ Sintomas</button>
 <button onclick="mostrar('prevencao')">🛡️ Prevenção</button>
 <button onclick="mostrar('sistema')">🧬 Sistema</button>
+<button onclick="mostrar('sus')">🩸 SUS</button>
 <button onclick="mostrar('quiz')">🧠 Quiz</button>
 </nav>
 
@@ -251,6 +252,63 @@ function resultado(){
 <p>• Vagina: canal de saída e relação</p>
 
 <p>Conhecer o próprio corpo é essencial para identificar alterações e cuidar da saúde.</p>
+
+<button onclick="mostrar('inicio')">⬅ Voltar</button>
+</div>
+</section>
+<section id="sus">
+<img class="banner" src="https://cdn-icons-png.flaticon.com/512/2966/2966488.png">
+
+<div class="card">
+<h2>Absorventes Gratuitos pelo SUS</h2>
+
+<p>O acesso a absorventes é um direito ligado à saúde, higiene e dignidade. No Brasil, o governo criou o Programa de Proteção e Promoção da Dignidade Menstrual, garantindo a distribuição gratuita de absorventes para pessoas em situação de vulnerabilidade.</p>
+
+<h3>O que é dignidade menstrual?</h3>
+
+<p>Dignidade menstrual significa ter acesso a produtos de higiene, informação e condições adequadas durante o período menstrual.</p>
+
+<p>A falta de absorventes pode levar ao uso de materiais inadequados, aumentando o risco de infecções e problemas de saúde.</p>
+
+<h3>Quem tem direito?</h3>
+
+<p>• Estudantes da rede pública de baixa renda</p>
+<p>• Pessoas em situação de rua</p>
+<p>• Pessoas inscritas no Cadastro Único (CadÚnico)</p>
+<p>• Mulheres em unidades prisionais</p>
+<p>• Pessoas em situação de extrema vulnerabilidade social</p>
+
+<h3>Como conseguir?</h3>
+
+<p>Os absorventes podem ser retirados gratuitamente em locais autorizados:</p>
+
+<p>• Unidades Básicas de Saúde (UBS)</p>
+<p>• Farmácias credenciadas pelo programa</p>
+<p>• Escolas públicas participantes</p>
+<p>• Centros de Referência de Assistência Social (CRAS)</p>
+
+<p>Em alguns casos, é necessário apresentar documento com foto e estar inscrito no CadÚnico.</p>
+
+<h3>Impactos na saúde e educação</h3>
+
+<p>A falta de acesso a absorventes pode causar:</p>
+
+<p>• Infecções íntimas</p>
+<p>• Baixa autoestima</p>
+<p>• Faltas na escola</p>
+<p>• Dificuldade no trabalho</p>
+
+<p>Com o acesso gratuito, há melhora na qualidade de vida, na saúde e na permanência escolar.</p>
+
+<h3>Importância social</h3>
+
+<p>Esse programa combate a pobreza menstrual, promovendo igualdade de gênero, saúde pública e inclusão social.</p>
+
+<p>Também contribui diretamente para a educação, pois muitas meninas deixam de frequentar a escola durante o período menstrual por falta de recursos.</p>
+
+<h3>Dica importante</h3>
+
+<p>Se você ou alguém que conhece precisa, procure a UBS mais próxima ou o CRAS da sua cidade para receber orientação.</p>
 
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
