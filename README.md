@@ -199,7 +199,10 @@ function verificarQuiz(){
 
 <!-- ===== ABSORVENTES SUS ===== -->
 <div class="section">
-    <img class="banner" src="https://img.freepik.com/vetores-gratis/conceito-de-sistema-reprodutivo-feminino_52683-45450.jpg?semt=ais_hybrid&w=740&q=80" alt="Absorventes SUS">
+    <img class="banner" 
+     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2DIAQSmd8oja-E__rBwfevvQKLwJtIB_RJ-kywc2Eg&s=10" 
+     alt="Absorventes SUS" 
+     style="object-fit:contain; max-height:250px;">
     <div class="card">
         <h2>Absorventes Gratuitos pelo SUS</h2>
         <p>Disponíveis para pessoas cadastradas no CadÚnico ou em programas sociais. Garantem dignidade menstrual e acesso à saúde.</p>
