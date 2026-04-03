@@ -8,21 +8,20 @@
 body {
     font-family: Arial;
     margin: 0;
-    background: linear-gradient(#ffe6f0, #ffffff);
+    background: #ffe6f0;
 }
 
 header {
     background: #ff4d88;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 15px;
 }
 
 nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
     background: #ff80aa;
+    padding: 10px;
 }
 
 nav button {
@@ -30,29 +29,23 @@ nav button {
     padding: 10px;
     border-radius: 10px;
     border: none;
-    background: white;
     cursor: pointer;
-    font-weight: bold;
 }
 
 section {
     display: none;
     padding: 20px;
-    opacity: 0;
-    transition: 0.5s;
 }
 
 .active {
     display: block;
-    opacity: 1;
 }
 
 .card {
     background: white;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 button {
@@ -62,77 +55,39 @@ button {
     border: none;
     background: #ff4d88;
     color: white;
-    cursor: pointer;
 }
 
-.progress {
-    height: 10px;
-    background: #ddd;
-    border-radius: 10px;
-    margin: 10px 0;
-}
-
-.progress-bar {
-    height: 10px;
-    background: #ff4d88;
-    width: 0%;
-    border-radius: 10px;
+img {
+    margin: 10px;
 }
 </style>
 
 <script>
 function mostrar(secao){
-    document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
-    document.getElementById(secao).classList.add("active");
+    document.querySelectorAll("section").forEach(s => s.style.display="none");
+    document.getElementById(secao).style.display="block";
 }
 
 let pontos = 0;
-let respondidas = 0;
 
-function responder(btn, correta){
-    if(btn.classList.contains("clicado")) return;
-
-    btn.classList.add("clicado");
-
+function responder(correta){
     if(correta){
         pontos++;
-        btn.style.background = "green";
-    } else {
-        btn.style.background = "red";
     }
-
-    respondidas++;
-    atualizarBarra();
-}
-
-function atualizarBarra(){
-    let progresso = (respondidas / 10) * 100;
-    document.getElementById("barra").style.width = progresso + "%";
 }
 
 function resultado(){
-    let texto = "";
-
-    if(pontos <= 4){
-        texto = "Você precisa aprender mais 😢";
-    } else if(pontos <= 7){
-        texto = "Você sabe o básico 👍";
-    } else {
-        texto = "Excelente! 👏💖";
-    }
-
-    document.getElementById("resultado").innerHTML =
-    "Pontuação: " + pontos + "/10 <br>" + texto;
+    document.getElementById("res").innerHTML =
+    "Você fez " + pontos + " pontos!";
 }
 </script>
 
 </head>
 
-<body>
+<body onload="mostrar('inicio')">
 
 <header>
 <h1>🌸 Saúde da Mulher</h1>
-<p>Educação e prevenção</p>
 </header>
 
 <nav>
@@ -141,20 +96,21 @@ function resultado(){
 <button onclick="mostrar('quiz')">Quiz</button>
 </nav>
 
-<section id="inicio" class="active">
+<section id="inicio">
 <div class="card">
 <h2>Bem-vinda 💖</h2>
-<p>Este projeto promove educação sobre saúde da mulher.</p>
-<p>Conhecimento ajuda na prevenção e cuidado.</p>
+<img src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png" width="100">
+<p>Informação ajuda a cuidar da sua saúde.</p>
 </div>
 </section>
 
 <section id="cuidados">
 <div class="card">
 <h2>Cuidados</h2>
-<p>✔ Higiene adequada</p>
-<p>✔ Roupas leves</p>
-<p>✔ Hidratação</p>
+<img src="https://cdn-icons-png.flaticon.com/512/2966/2966488.png" width="100">
+<p>✔ Higiene diária</p>
+<p>✔ Beber água</p>
+<p>✔ Evitar roupas apertadas</p>
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
 </section>
@@ -163,54 +119,22 @@ function resultado(){
 <div class="card">
 <h2>Quiz</h2>
 
-<div class="progress">
-<div id="barra" class="progress-bar"></div>
-</div>
-
-<p>1. Higiene diária é importante?</p>
-<button onclick="responder(this,true)">Sim</button>
-<button onclick="responder(this,false)">Não</button>
+<p>1. Higiene é importante?</p>
+<button onclick="responder(true)">Sim</button>
+<button onclick="responder(false)">Não</button>
 
 <p>2. Automedicação é recomendada?</p>
-<button onclick="responder(this,false)">Sim</button>
-<button onclick="responder(this,true)">Não</button>
+<button onclick="responder(false)">Sim</button>
+<button onclick="responder(true)">Não</button>
 
-<p>3. Corrimento estranho é normal?</p>
-<button onclick="responder(this,false)">Sim</button>
-<button onclick="responder(this,true)">Não</button>
-
-<p>4. Água ajuda na saúde?</p>
-<button onclick="responder(this,true)">Sim</button>
-<button onclick="responder(this,false)">Não</button>
-
-<p>5. Preservativo previne doenças?</p>
-<button onclick="responder(this,true)">Sim</button>
-<button onclick="responder(this,false)">Não</button>
-
-<p>6. Dor ao urinar é sinal de alerta?</p>
-<button onclick="responder(this,true)">Sim</button>
-<button onclick="responder(this,false)">Não</button>
-
-<p>7. Roupas apertadas ajudam?</p>
-<button onclick="responder(this,false)">Sim</button>
-<button onclick="responder(this,true)">Não</button>
-
-<p>8. Consultar médico é importante?</p>
-<button onclick="responder(this,true)">Sim</button>
-<button onclick="responder(this,false)">Não</button>
-
-<p>9. Coceira pode indicar problema?</p>
-<button onclick="responder(this,true)">Sim</button>
-<button onclick="responder(this,false)">Não</button>
-
-<p>10. Higiene íntima deve ser evitada?</p>
-<button onclick="responder(this,false)">Sim</button>
-<button onclick="responder(this,true)">Não</button>
+<p>3. Água ajuda?</p>
+<button onclick="responder(true)">Sim</button>
+<button onclick="responder(false)">Não</button>
 
 <br><br>
 <button onclick="resultado()">Ver resultado</button>
 
-<p id="resultado"></p>
+<p id="res"></p>
 
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
