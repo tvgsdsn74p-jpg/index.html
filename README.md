@@ -34,19 +34,20 @@ nav button {
 
 section {
     display: none;
-    padding: 20px;
+}
+
+.banner {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 }
 
 .card {
     background: white;
+    margin: 15px;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-}
-
-img {
-    width: 100px;
-    margin: 10px;
 }
 
 button {
@@ -74,18 +75,8 @@ function responder(correta){
 }
 
 function resultado(){
-    let msg = "";
-
-    if(pontos <= 4){
-        msg = "Você precisa aprender mais 😢";
-    } else if(pontos <= 7){
-        msg = "Você sabe o básico 👍";
-    } else {
-        msg = "Excelente! 👏💖";
-    }
-
-    document.getElementById("res").innerHTML =
-    "Pontuação: " + pontos + "/10 <br>" + msg;
+    let msg = pontos >= 7 ? "Muito bem! 👏" : "Precisa melhorar 😊";
+    document.getElementById("res").innerHTML = "Pontuação: " + pontos + "/10 <br>" + msg;
 }
 </script>
 
@@ -95,7 +86,6 @@ function resultado(){
 
 <header>
 <h1>🌸 Saúde da Mulher</h1>
-<p>Educação e prevenção</p>
 </header>
 
 <nav>
@@ -107,99 +97,73 @@ function resultado(){
 </nav>
 
 <section id="inicio">
+<img class="banner" src="https://images.unsplash.com/photo-1584515933487-779824d29309">
 <div class="card">
 <h2>Bem-vinda 💖</h2>
-<img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png">
-<p>Este site educativo ajuda mulheres a entender melhor sua saúde.</p>
-<p>A informação é essencial para prevenção de doenças e bem-estar.</p>
+<p>Informação é essencial para o cuidado com a saúde da mulher.</p>
 </div>
 </section>
 
 <section id="cuidados">
+<img class="banner" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5">
 <div class="card">
 <h2>Cuidados básicos</h2>
-<img src="https://cdn-icons-png.flaticon.com/512/2966/2966488.png">
-<p>✔ Higiene íntima diária</p>
-<p>✔ Uso de roupas de algodão</p>
-<p>✔ Evitar roupas apertadas</p>
-<p>✔ Trocar absorventes regularmente</p>
-<p>✔ Beber bastante água</p>
+<p>✔ Higiene íntima adequada</p>
+<p>✔ Uso de roupas confortáveis</p>
+<p>✔ Hidratação</p>
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
 </section>
 
 <section id="sintomas">
+<img class="banner" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
 <div class="card">
 <h2>Sintomas</h2>
-<img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png">
-<p>⚠ Corrimento diferente</p>
-<p>⚠ Mau cheiro</p>
+<p>⚠ Corrimento</p>
 <p>⚠ Coceira</p>
-<p>⚠ Ardência ao urinar</p>
-<p>⚠ Dor durante relação</p>
+<p>⚠ Dor</p>
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
 </section>
 
 <section id="prevencao">
+<img class="banner" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef">
 <div class="card">
 <h2>Prevenção</h2>
-<img src="https://cdn-icons-png.flaticon.com/512/2921/2921822.png">
 <p>✔ Uso de preservativo</p>
 <p>✔ Consultas regulares</p>
-<p>✔ Exames preventivos</p>
-<p>✔ Evitar automedicação</p>
+<p>✔ Exames</p>
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
 </section>
 
 <section id="quiz">
+<img class="banner" src="https://images.unsplash.com/photo-1584697964190-7383cde1d19c">
 <div class="card">
 <h2>Quiz</h2>
 
-<p>1. Higiene íntima é importante?</p>
+<p>1. Higiene é importante?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
 
-<p>2. Automedicação é recomendada?</p>
+<p>2. Água ajuda na saúde?</p>
+<button onclick="responder(true)">Sim</button>
+<button onclick="responder(false)">Não</button>
+
+<p>3. Automedicação é correta?</p>
 <button onclick="responder(false)">Sim</button>
 <button onclick="responder(true)">Não</button>
 
-<p>3. Beber água ajuda na saúde?</p>
+<p>4. Preservativo previne doenças?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
 
-<p>4. Corrimento estranho é normal?</p>
-<button onclick="responder(false)">Sim</button>
-<button onclick="responder(true)">Não</button>
-
-<p>5. Dor ao urinar é sinal de alerta?</p>
+<p>5. Coceira pode ser sinal de problema?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
-
-<p>6. Usar preservativo previne doenças?</p>
-<button onclick="responder(true)">Sim</button>
-<button onclick="responder(false)">Não</button>
-
-<p>7. Roupas apertadas ajudam?</p>
-<button onclick="responder(false)">Sim</button>
-<button onclick="responder(true)">Não</button>
-
-<p>8. Consultar médico é importante?</p>
-<button onclick="responder(true)">Sim</button>
-<button onclick="responder(false)">Não</button>
-
-<p>9. Coceira pode indicar problema?</p>
-<button onclick="responder(true)">Sim</button>
-<button onclick="responder(false)">Não</button>
-
-<p>10. Higiene deve ser evitada?</p>
-<button onclick="responder(false)">Sim</button>
-<button onclick="responder(true)">Não</button>
 
 <br><br>
 <button onclick="resultado()">Ver resultado</button>
-
 <p id="res"></p>
 
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
