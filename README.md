@@ -106,11 +106,11 @@ function resultado(){
 </header>
 
 <nav>
-<button onclick="mostrar('inicio')">Início</button>
-<button onclick="mostrar('cuidados')">Cuidados</button>
-<button onclick="mostrar('sintomas')">Sintomas</button>
-<button onclick="mostrar('prevencao')">Prevenção</button>
-<button onclick="mostrar('quiz')">Quiz</button>
+<button onclick="mostrar('inicio')">🏠 Início</button>
+<button onclick="mostrar('cuidados')">🧼 Cuidados</button>
+<button onclick="mostrar('sintomas')">⚠️ Sintomas</button>
+<button onclick="mostrar('prevencao')">🛡️ Prevenção</button>
+<button onclick="mostrar('quiz')">🧠 Quiz</button>
 </nav>
 
 <section id="inicio">
