@@ -281,9 +281,7 @@ style="width: 220px; display: block; margin: 10px auto;">
 </div>
 </section>
 <section id="contraceptivos">
-<img class="banner" src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png">
-
-<div class="card">
+<img src="https://static.vecteezy.com/ti/vetor-gratis/p1/6922254-contraceptivos-conjunto-controle-de-natalidade-ilustracao-para-impressao-fundos-capas-embalagem-cartoes-cartazes-adesivos-textil-e-design-sazonal-isolado-em-fundo-branco-vetor.jpg" style="width: 260px; display: block; margin: 10px auto; border-radius: 10px;">
 <h2>Métodos Contraceptivos</h2>
     
 <p>Os métodos contraceptivos são formas de evitar a gravidez e, em alguns casos, também ajudam na prevenção de infecções sexualmente transmissíveis (ISTs).</p>
