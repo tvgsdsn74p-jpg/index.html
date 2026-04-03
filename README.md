@@ -114,7 +114,7 @@ function resultado(){
 </nav>
 
 <section id="inicio">
-<img class="banner" src="https://cdn-icons-png.flaticon.com/512/4149/4149673.png">
+<img class="banner" src="https://images.vexels.com/media/users/3/141470/isolated/preview/1e1f3c827595635984be3f98f49c410c-avatar-de-perfil-de-mulher-1.png">
 <div class="card">
 <h2>Educação em Saúde da Mulher</h2>
 
