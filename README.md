@@ -82,8 +82,8 @@ function resultado(){
 <button onclick="mostrar('sistema')">🧬 Sistema</button>
 <button onclick="mostrar('sus')">🩸 SUS</button>
 <button onclick="mostrar('contraceptivos')">💊 Métodos</button>
-<button onclick="mostrar('projeto')">📚 Projeto</button>
 <button onclick="mostrar('quiz')">🧠 Quiz</button>
+<button onclick="mostrar('projeto')">📚 Projeto</button>
 </nav>
 
 <section id="inicio">
