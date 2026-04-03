@@ -114,6 +114,7 @@ function resultado(){
 <button onclick="mostrar('prevencao')">🛡️ Prevenção</button>
 <button onclick="mostrar('sistema')">🧬 Sistema</button>
 <button onclick="mostrar('sus')">🩸 SUS</button>
+<button onclick="mostrar('contraceptivos')">💊 Métodos</button>
 <button onclick="mostrar('quiz')">🧠 Quiz</button>
 </nav>
 
@@ -309,6 +310,73 @@ function resultado(){
 <h3>Dica importante</h3>
 
 <p>Se você ou alguém que conhece precisa, procure a UBS mais próxima ou o CRAS da sua cidade para receber orientação.</p>
+
+<button onclick="mostrar('inicio')">⬅ Voltar</button>
+</div>
+</section>
+<section id="contraceptivos">
+<img class="banner" src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png">
+
+<div class="card">
+<h2>Métodos Contraceptivos</h2>
+
+<p>Os métodos contraceptivos são formas de evitar a gravidez e, em alguns casos, também ajudam na prevenção de infecções sexualmente transmissíveis (ISTs).</p>
+
+<h3>Tipos de métodos</h3>
+
+<h4>🛡️ Métodos de barreira</h4>
+<p>• Preservativo masculino</p>
+<p>• Preservativo feminino</p>
+<p>Esses métodos impedem o contato entre espermatozoide e óvulo e também protegem contra ISTs.</p>
+
+<h4>💊 Métodos hormonais</h4>
+<p>• Pílula anticoncepcional</p>
+<p>• Injeção anticoncepcional</p>
+<p>• Adesivo hormonal</p>
+<p>• Anel vaginal</p>
+<p>Atuam impedindo a ovulação.</p>
+
+<h4>🧬 Dispositivos intrauterinos (DIU)</h4>
+<p>• DIU de cobre</p>
+<p>• DIU hormonal</p>
+<p>São colocados dentro do útero e impedem a gravidez por vários anos.</p>
+
+<h4>📅 Métodos naturais</h4>
+<p>• Tabelinha</p>
+<p>• Observação do ciclo menstrual</p>
+<p>Possuem maior risco de falha.</p>
+
+<h3>Métodos oferecidos pelo SUS</h3>
+
+<p>O Sistema Único de Saúde (SUS) oferece gratuitamente diversos métodos contraceptivos:</p>
+
+<p>• Preservativo masculino e feminino</p>
+<p>• Pílula anticoncepcional</p>
+<p>• Injeção anticoncepcional</p>
+<p>• DIU de cobre</p>
+
+<p>Esses métodos podem ser obtidos em Unidades Básicas de Saúde (UBS), com orientação de profissionais de saúde.</p>
+
+<h3>Métodos disponíveis na rede particular</h3>
+
+<p>Alguns métodos geralmente são encontrados em clínicas e farmácias particulares:</p>
+
+<p>• DIU hormonal</p>
+<p>• Implante hormonal</p>
+<p>• Adesivo anticoncepcional</p>
+<p>• Anel vaginal</p>
+
+<p>Esses métodos podem ter custo mais elevado, mas oferecem alta eficácia.</p>
+
+<h3>Qual método escolher?</h3>
+
+<p>A escolha deve ser feita com orientação de um profissional de saúde, considerando idade, histórico de saúde e estilo de vida.</p>
+
+<p>O uso de preservativos é sempre recomendado, pois além de evitar gravidez, protege contra infecções.</p>
+
+<h3>Importância da prevenção</h3>
+
+<p>O acesso à informação e aos métodos contraceptivos contribui para a saúde da mulher, autonomia e planejamento familiar.</p>
 
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
