@@ -31,6 +31,8 @@ nav button {
     border: none;
     cursor: pointer;
     background: white;
+    color: #d81b60;   /* 👈 ESSENCIAL */
+    font-weight: bold;
 }
 
 section {
