@@ -287,6 +287,9 @@ function resultado(){
 <div class="card">
 <h2>Métodos Contraceptivos</h2>
 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FAPNcvSzS8-WXlbQcIKfN9ACxaG1GGaymuUit2SXuw&s" 
+style="width: 220px; display: block; margin: 10px auto;">
+
 <p>Os métodos contraceptivos são formas de evitar a gravidez e, em alguns casos, também ajudam na prevenção de infecções sexualmente transmissíveis (ISTs).</p>
 
 <h3>Tipos de métodos</h3>
