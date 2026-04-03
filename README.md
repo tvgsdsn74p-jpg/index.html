@@ -90,11 +90,15 @@ function resultado(){
 <div class="card">
 <h2>Educação em Saúde da Mulher</h2>
 
-<p>Este projeto tem como objetivo promover a educação em saúde da mulher, alinhado à ODS 4, que busca garantir educação de qualidade para todos.</p>
+<p>Este projeto foi desenvolvido com o objetivo de promover a educação em saúde da mulher, abordando temas importantes como prevenção, cuidados íntimos, métodos contraceptivos e acesso a serviços de saúde.</p>
 
-<p>A saúde feminina envolve cuidados físicos, emocionais e preventivos. Ter acesso à informação permite que a mulher reconheça sinais do próprio corpo e busque ajuda quando necessário.</p>
+<p>O conteúdo busca informar de forma simples e acessível, contribuindo para o conhecimento, autonomia e bem-estar.</p>
 
-<p>A educação em saúde é essencial para reduzir doenças, melhorar a qualidade de vida e incentivar o autocuidado.</p>
+<h3>Sobre a autora</h3>
+
+<p>Meu nome é Beatriz Dias e sou estudante da área de Tecnologia da Informação. Este projeto foi criado como atividade acadêmica com foco na educação e impacto social.</p>
+
+<p>O projeto está alinhado com a ODS 4 (Educação de Qualidade), promovendo o acesso à informação e conscientização sobre a saúde feminina.</p>
 
 </div>
 </section>
