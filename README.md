@@ -157,7 +157,7 @@ function verificarQuiz(){
 
 <!-- ===== INÍCIO ===== -->
 <div class="section">
-    <img class="banner" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBhQYX5n2q73o_FDwZDA_hXSvAHox4jDzWxZF05kF3RVnXOFWtMLDQ-gaD&s" alt="Mulher">
+    <img class="banner" src="https://img.freepik.com/vetores-gratis/conceito-de-sistema-reprodutivo-feminino_52683-45450.jpg?semt=ais_hybrid&w=740&q=80" alt="Sistema reprodutor feminino ilustrado">
     <div class="card">
         <p>Este projeto foi desenvolvido com o objetivo de promover a educação em saúde da mulher, abordando temas importantes como prevenção, cuidados íntimos, métodos contraceptivos e acesso a serviços de saúde.</p>
         <p>As informações são apresentadas de forma clara e acessível, contribuindo para o conhecimento, autonomia e bem-estar.</p>
