@@ -3,89 +3,123 @@
 <head>
 <meta charset="UTF-8">
 <title>Saúde da Mulher - ODS 4</title>
+
 <style>
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    padding-bottom: 100px; /* Espaço para o menu fixo */
     background: #fff0f5;
-    padding-bottom: 80px;
 }
+
 header {
     text-align: center;
-    background: #d81b60;
-    color: white;
-    padding: 15px 0;
+    padding: 20px 10px;
+    background-color: #f8d7f0;
 }
+
+header h1 {
+    margin: 0;
+    color: #d81b60;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #880e4f;
+}
+
 nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
     display: flex;
     justify-content: space-around;
-    background: #fff;
-    border-bottom: 2px solid #eee;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    border-top: 2px solid #eee;
+    padding: 10px 0;
+    z-index: 1000;
 }
+
 nav button {
     background: none;
     border: none;
-    font-size: 14px;
+    font-size: 12px;
     color: #d81b60;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
+
 section {
     display: none;
     padding: 20px;
 }
-.card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-}
-.banner {
+
+section img.banner {
     width: 100%;
-    max-height: 250px;
+    max-height: 220px;
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
-button {
-    margin-top: 5px;
-    margin-right: 5px;
-    padding: 5px 10px;
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Botões do quiz */
+.card button {
+    margin: 5px 5px 10px 0;
+    padding: 8px 12px;
     border-radius: 5px;
-    border: none;
-    background: #d81b60;
-    color: white;
+    border: 1px solid #d81b60;
+    background: #fff0f5;
     cursor: pointer;
 }
-button:hover {
-    background: #c2185b;
+
+.card button:hover {
+    background: #d81b60;
+    color: #fff;
 }
+
 </style>
 
 <script>
 function mostrar(secao){
     document.querySelectorAll("section").forEach(s => s.style.display="none");
-    const elemento = document.getElementById(secao);
-    if(elemento) elemento.style.display="block";
+    document.getElementById(secao).style.display="block";
 }
 
 let pontos = 0;
+
 function responder(correta){
-    if(correta) pontos++;
+    if(correta){
+        pontos++;
+    }
 }
+
 function resultado(){
     let msg = "";
-    if(pontos <= 4) msg = "Você precisa estudar mais 😢";
-    else if(pontos <= 7) msg = "Você está no caminho certo 👍";
-    else msg = "Excelente conhecimento! 👏💖";
-    document.getElementById("res").innerHTML = "Pontuação: " + pontos + "/10 <br>" + msg;
+
+    if(pontos <= 4){
+        msg = "Você precisa estudar mais 😢";
+    } else if(pontos <= 7){
+        msg = "Você está no caminho certo 👍";
+    } else {
+        msg = "Excelente conhecimento! 👏💖";
+    }
+
+    document.getElementById("res").innerHTML =
+    "Pontuação: " + pontos + "/10 <br>" + msg;
 }
 </script>
+
 </head>
 
 <body onload="mostrar('inicio')">
@@ -107,7 +141,7 @@ function resultado(){
 <button onclick="mostrar('quiz')">🧠 Quiz</button>
 </nav>
 
-<!-- Início -->
+<!-- INÍCIO -->
 <section id="inicio">
 <img class="banner" src="https://img.freepik.com/vetores-gratis/conceito-de-sistema-reprodutivo-feminino_52683-45450.jpg">
 <div class="card">
@@ -120,19 +154,49 @@ function resultado(){
 </div>
 </section>
 
-<!-- Cuidados -->
+<!-- PROJETO -->
+<section id="projeto">
+<div class="card">
+<h2>Projeto de Extensão</h2>
+
+<h3>Objetivo</h3>
+<p>Promover a educação em saúde da mulher por meio de um site informativo, facilitando o acesso ao conhecimento sobre prevenção, autocuidado e direitos relacionados à saúde.</p>
+
+<h3>Justificativa</h3>
+<p>A falta de informação sobre saúde feminina ainda é um problema que afeta muitas mulheres, especialmente em contextos de vulnerabilidade. Este projeto busca contribuir para a disseminação de conhecimento de forma acessível e digital.</p>
+
+<h3>Público-alvo</h3>
+<p>Mulheres jovens e adultas, estudantes e pessoas que buscam informações sobre saúde íntima, métodos contraceptivos e serviços de saúde.</p>
+
+<h3>Relação com a ODS 4</h3>
+<p>O projeto está alinhado com a ODS 4 – Educação de Qualidade, promovendo o acesso à informação e incentivando o aprendizado sobre saúde feminina.</p>
+
+<h3>Impacto Social</h3>
+<p>O projeto contribui para a conscientização, prevenção de doenças e melhoria da qualidade de vida, incentivando o autocuidado e o acesso aos serviços de saúde.</p>
+
+<h3>Conclusão</h3>
+<p>O uso da tecnologia como ferramenta educativa permite ampliar o alcance da informação e promover mudanças positivas na sociedade, especialmente na área da saúde da mulher.</p>
+
+<h3>Referências</h3>
+<p>Ministério da Saúde</p>
+<p>Organização Mundial da Saúde (OMS)</p>
+<p>Conteúdos educativos sobre saúde da mulher</p>
+</div>
+</section>
+
+<!-- CUIDADOS -->
 <section id="cuidados">
 <img class="banner" src="https://thumbs.dreamstime.com/b/%C3%ADcones-de-higiene-%C3%ADntima-feminina-menstrua%C3%A7%C3%A3o-menstrual-bem-estar-sa%C3%BAde-prote%C3%A7%C3%A3o-conforto-pureza-mulher-cuidados-%C3%ADntimos-398322790.jpg">
 <div class="card">
 <h2>Cuidados com a saúde íntima</h2>
 <p>A higiene íntima deve ser feita de forma adequada, utilizando produtos suaves e evitando o uso excessivo de sabonetes íntimos, que podem alterar o equilíbrio natural da região.</p>
 <p>O uso de roupas de algodão é recomendado, pois permite melhor ventilação e reduz a umidade, prevenindo infecções.</p>
-<p>Evitar roupas muito apertadas, pois aumentam o calor e a umidade, favorecendo o crescimento de microrganismos.</p>
-<p>Manter uma alimentação equilibrada e boa hidratação contribui para o bom funcionamento do organismo.</p>
+<p>É importante evitar roupas muito apertadas, pois elas aumentam o calor e a umidade, favorecendo o crescimento de microrganismos.</p>
+<p>Além disso, manter uma alimentação equilibrada e boa hidratação contribui para o bom funcionamento do organismo.</p>
 </div>
 </section>
 
-<!-- Sintomas -->
+<!-- SINTOMAS -->
 <section id="sintomas">
 <img class="banner" src="https://cdn-icons-png.flaticon.com/512/564/564619.png">
 <div class="card">
@@ -145,7 +209,7 @@ function resultado(){
 </div>
 </section>
 
-<!-- Prevenção -->
+<!-- PREVENÇÃO -->
 <section id="prevencao">
 <img class="banner" src="https://cdn-icons-png.flaticon.com/512/2913/2913465.png">
 <div class="card">
@@ -154,50 +218,96 @@ function resultado(){
 <p>O uso de preservativo é essencial para evitar infecções sexualmente transmissíveis.</p>
 <p>Consultas regulares ao ginecologista permitem a detecção precoce de doenças.</p>
 <p>Exames preventivos, como o Papanicolau, são fundamentais para prevenir o câncer do colo do útero.</p>
-<p>Evitar a automedicação também é muito importante.</p>
+<p>Evitar a automedicação também é muito importante, pois pode mascarar sintomas e agravar problemas.</p>
 </div>
 </section>
 
-<!-- Sistema Reprodutor -->
+<!-- SISTEMA -->
 <section id="sistema">
 <img class="banner" src="https://png.pngtree.com/png-clipart/20201208/original/pngtree-female-reproductive-system-health-hand-drawn-png-image_5518539.jpg">
 <div class="card">
 <h2>Sistema Reprodutor Feminino</h2>
-<p>O sistema reprodutor feminino é responsável pela reprodução e produção de hormônios importantes para o corpo.</p>
+<p>O sistema reprodutor feminino é responsável pela reprodução e pela produção de hormônios importantes para o corpo.</p>
 <p>Ele é composto por órgãos que trabalham juntos:</p>
 <p>• Ovários: produzem os óvulos e hormônios</p>
 <p>• Trompas de Falópio: transportam o óvulo</p>
 <p>• Útero: onde o bebê se desenvolve</p>
 <p>• Vagina: canal de saída e relação</p>
 <p>Conhecer o próprio corpo é essencial para identificar alterações e cuidar da saúde.</p>
-<button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
 </section>
 
 <!-- SUS -->
 <section id="sus">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FAPNcvSzS8-WXlbQcIKfN9ACxaG1GGaymuUit2SXuw&s" style="width: 220px; display: block; margin: 10px auto;">
 <div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FAPNcvSzS8-WXlbQcIKfN9ACxaG1GGaymuUit2SXuw&s" style="width: 220px; display:block; margin: 10px auto;">
 <h2>Absorventes Gratuitos pelo SUS</h2>
-<p>Acesso a absorventes é um direito ligado à saúde, higiene e dignidade...</p>
-<button onclick="mostrar('inicio')">⬅ Voltar</button>
+<p>O acesso a absorventes é um direito ligado à saúde, higiene e dignidade. No Brasil, o governo criou o Programa de Proteção e Promoção da Dignidade Menstrual, garantindo a distribuição gratuita de absorventes para pessoas em situação de vulnerabilidade.</p>
+
+<h3>Quem tem direito?</h3>
+<p>• Estudantes da rede pública de baixa renda</p>
+<p>• Pessoas em situação de rua</p>
+<p>• Pessoas inscritas no Cadastro Único (CadÚnico)</p>
+<p>• Mulheres em unidades prisionais</p>
+<p>• Pessoas em situação de extrema vulnerabilidade social</p>
+
+<h3>Como conseguir?</h3>
+<p>Os absorventes podem ser retirados gratuitamente em locais autorizados:</p>
+<p>• Unidades Básicas de Saúde (UBS)</p>
+<p>• Farmácias credenciadas pelo programa</p>
+<p>• Escolas públicas participantes</p>
+<p>• Centros de Referência de Assistência Social (CRAS)</p>
+<p>É necessário apresentar documento com foto e, em alguns casos, estar inscrito no CadÚnico.</p>
+
+<h3>Impactos na saúde e educação</h3>
+<p>A falta de absorventes pode causar infecções íntimas, baixa autoestima, faltas na escola e dificuldade no trabalho.</p>
+<p>O acesso gratuito melhora a qualidade de vida, saúde e permanência escolar.</p>
+
+<h3>Importância social</h3>
+<p>O programa combate a pobreza menstrual, promove igualdade de gênero e inclusão social, contribuindo para a educação feminina.</p>
 </div>
 </section>
 
-<!-- Métodos Contraceptivos -->
+<!-- CONTRACEPTIVOS -->
 <section id="contraceptivos">
-<img src="https://static.vecteezy.com/ti/vetor-gratis/p1/6922254-contraceptivos-conjunto-controle-de-natalidade-ilustracao-para-impressao-fundos-capas-embalagem-cartoes-cartazes-adesivos-textil-e-design-sazonal-isolado-em-fundo-branco-vetor.jpg" style="width: 260px; display: block; margin: 10px auto; border-radius: 10px;">
 <div class="card">
+<img src="https://static.vecteezy.com/ti/vetor-gratis/p1/6922254-contraceptivos-conjunto-controle-de-natalidade-ilustracao-para-impressao-fundos-capas-embalagem-cartoes-cartazes-adesivos-textil-e-design-sazonal-isolado-em-fundo-branco-vetor.jpg" style="width:260px; display:block; margin:10px auto; border-radius:10px;">
 <h2>Métodos Contraceptivos</h2>
-<p>Conteúdo completo dos métodos contraceptivos...</p>
-<button onclick="mostrar('inicio')">⬅ Voltar</button>
+<p>Os métodos contraceptivos são formas de evitar a gravidez e, em alguns casos, também ajudam na prevenção de infecções sexualmente transmissíveis (ISTs).</p>
+<h3>Tipos de métodos</h3>
+<h4>🛡️ Métodos de barreira</h4>
+<p>• Preservativo masculino</p>
+<p>• Preservativo feminino</p>
+<h4>💊 Métodos hormonais</h4>
+<p>• Pílula anticoncepcional</p>
+<p>• Injeção anticoncepcional</p>
+<p>• Adesivo hormonal</p>
+<p>• Anel vaginal</p>
+<h4>🧬 DIU</h4>
+<p>• DIU de cobre</p>
+<p>• DIU hormonal</p>
+<h4>📅 Métodos naturais</h4>
+<p>• Tabelinha</p>
+<p>• Observação do ciclo menstrual</p>
+<h3>Métodos oferecidos pelo SUS</h3>
+<p>• Preservativos masculino e feminino</p>
+<p>• Pílula anticoncepcional</p>
+<p>• Injeção anticoncepcional</p>
+<p>• DIU de cobre</p>
+<h3>Métodos disponíveis na rede particular</h3>
+<p>• DIU hormonal</p>
+<p>• Implante hormonal</p>
+<p>• Adesivo anticoncepcional</p>
+<p>• Anel vaginal</p>
+<h3>Importância da prevenção</h3>
+<p>O acesso à informação e aos métodos contraceptivos contribui para a saúde da mulher, autonomia e planejamento familiar.</p>
 </div>
 </section>
 
-<!-- Quiz -->
+<!-- QUIZ -->
 <section id="quiz">
-<img class="banner" src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
 <div class="card">
+<img class="banner" src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
 <h2>Quiz Educativo</h2>
 <p>Teste seus conhecimentos:</p>
 
@@ -241,33 +351,9 @@ function resultado(){
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
 
-<br><br>
+<br>
 <button onclick="resultado()">Ver resultado</button>
 <p id="res"></p>
-</div>
-</section>
-
-<!-- Projeto de Extensão -->
-<section id="projeto">
-<div class="card" style="background: #fff3cd;">
-<h2>Projeto de Extensão</h2>
-<h3>Objetivo</h3>
-<p>Promover a educação em saúde da mulher por meio de um site informativo...</p>
-<h3>Justificativa</h3>
-<p>A falta de informação sobre saúde feminina ainda é um problema...</p>
-<h3>Público-alvo</h3>
-<p>Mulheres jovens e adultas, estudantes e pessoas que buscam informações...</p>
-<h3>Relação com a ODS 4</h3>
-<p>O projeto está alinhado com a ODS 4 – Educação de Qualidade...</p>
-<h3>Impacto Social</h3>
-<p>O projeto contribui para conscientização, prevenção de doenças e melhoria da qualidade de vida...</p>
-<h3>Conclusão</h3>
-<p>O uso da tecnologia como ferramenta educativa permite ampliar o alcance da informação...</p>
-<h3>Referências</h3>
-<p>Ministério da Saúde</p>
-<p>Organização Mundial da Saúde (OMS)</p>
-<p>Conteúdos educativos sobre saúde da mulher</p>
-<button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
 </section>
 
