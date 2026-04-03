@@ -42,7 +42,7 @@ section {
 .banner {
     width: 100%;
     max-height: 220px;
-    object-fit: contain;
+    object-fit: contain; /* 👈 ESSENCIAL */
     background: white;
 }
 
@@ -131,8 +131,7 @@ function resultado(){
 </section>
 
 <section id="cuidados">
-<img class="banner" src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png">
-<div class="card">
+<img class="banner" src="https://thumbs.dreamstime.com/b/%C3%ADcones-de-higiene-%C3%ADntima-feminina-menstrua%C3%A7%C3%A3o-menstrual-bem-estar-sa%C3%BAde-prote%C3%A7%C3%A3o-conforto-pureza-mulher-cuidados-%C3%ADntimos-398322790.jpg">
 <h2>Cuidados com a saúde íntima</h2>
 
 <p>A higiene íntima deve ser feita de forma adequada, utilizando produtos suaves e evitando o uso excessivo de sabonetes íntimos, que podem alterar o equilíbrio natural da região.</p>
