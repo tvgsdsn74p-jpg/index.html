@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+ <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -8,28 +9,30 @@
 body {
     font-family: Arial;
     margin: 0;
-    background-color: #fff0f5;
+    background: linear-gradient(to right, #ffe6f0, #fff);
 }
 
 header {
-    background-color: #d63384;
+    background: #c2185b;
     color: white;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
 nav {
-    background-color: #f8c1d9;
+    background: #f8bbd0;
     padding: 10px;
     text-align: center;
 }
 
 nav button {
+    padding: 10px 15px;
     margin: 5px;
-    padding: 10px;
     border: none;
-    background-color: white;
+    border-radius: 20px;
+    background: white;
     cursor: pointer;
+    font-weight: bold;
 }
 
 section {
@@ -43,9 +46,11 @@ section {
 
 .card {
     background: white;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 15px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 </style>
 
@@ -58,14 +63,15 @@ function mostrar(secao) {
 
 function verificar() {
     let resposta = document.querySelector('input[name="q1"]:checked');
-    if (resposta) {
-        if (resposta.value == "certo") {
-            alert("Resposta correta!");
-        } else {
-            alert("Resposta errada!");
-        }
-    } else {
+    if (!resposta) {
         alert("Escolha uma resposta!");
+        return;
+    }
+
+    if (resposta.value == "certo") {
+        alert("✅ Correto!");
+    } else {
+        alert("❌ Errado!");
     }
 }
 </script>
@@ -76,20 +82,21 @@ function verificar() {
 
 <header>
 <h1>🌸 Saúde da Mulher</h1>
-<p>Educação e autocuidado</p>
+<p>Educação, prevenção e autocuidado</p>
 </header>
 
 <nav>
 <button onclick="mostrar('inicio')">Início</button>
 <button onclick="mostrar('cuidados')">Cuidados</button>
 <button onclick="mostrar('sintomas')">Sintomas</button>
+<button onclick="mostrar('mitos')">Mitos</button>
 <button onclick="mostrar('quiz')">Quiz</button>
 </nav>
 
 <section id="inicio" class="active">
 <div class="card">
-<h2>Bem-vinda!</h2>
-<p>Este site foi criado para orientar mulheres sobre saúde íntima, prevenção e autocuidado.</p>
+<h2>Bem-vinda 💖</h2>
+<p>Este projeto tem como objetivo ensinar de forma simples sobre saúde íntima feminina, promovendo informação e prevenção.</p>
 </div>
 </section>
 
@@ -97,24 +104,37 @@ function verificar() {
 <div class="card">
 <h2>Cuidados básicos</h2>
 <p>✔ Higiene íntima diária</p>
-<p>✔ Usar roupas confortáveis</p>
-<p>✔ Evitar produtos agressivos</p>
+<p>✔ Uso de roupas confortáveis</p>
+<p>✔ Evitar produtos com cheiro forte</p>
+<p>✔ Beber bastante água</p>
 </div>
 </section>
 
 <section id="sintomas">
 <div class="card">
-<h2>Sinais de atenção</h2>
-<p>⚠ Corrimento com cheiro forte</p>
-<p>⚠ Ardência ao urinar</p>
+<h2>Sinais de alerta</h2>
+<p>⚠ Corrimento com odor forte</p>
 <p>⚠ Coceira intensa</p>
-<p>Procure um profissional de saúde.</p>
+<p>⚠ Ardência ao urinar</p>
+<p>⚠ Dor durante relação</p>
+<p><b>Procure um profissional de saúde.</b></p>
+</div>
+</section>
+
+<section id="mitos">
+<div class="card">
+<h2>Mitos e Verdades</h2>
+<p><b>❌ Mito:</b> Corrimento sempre é normal</p>
+<p><b>✔ Verdade:</b> Depende do cheiro e cor</p>
+
+<p><b>❌ Mito:</b> Só precisa ir ao ginecologista com dor</p>
+<p><b>✔ Verdade:</b> Consultas preventivas são essenciais</p>
 </div>
 </section>
 
 <section id="quiz">
 <div class="card">
-<h2>Quiz rápido</h2>
+<h2>Teste seu conhecimento</h2>
 
 <p>Corrimento com cheiro forte é normal?</p>
 
