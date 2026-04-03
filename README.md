@@ -377,6 +377,6 @@ style="width: 220px; display: block; margin: 10px auto;">
 
 </div>
 
-</section>
+
 </body>
 </html>
