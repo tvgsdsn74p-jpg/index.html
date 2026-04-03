@@ -349,8 +349,9 @@ style="width: 220px; display: block; margin: 10px auto;">
 
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
+<button onclick="mostrar('projeto')">⬅ Voltar</button>
 <section id="projeto">
-
+    
 <div class="card">
 <h2>Projeto de Extensão</h2>
 
