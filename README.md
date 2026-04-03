@@ -131,8 +131,6 @@ function verificar() {
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/2966/2966488.png" width="90">
 <h2>Cuidados básicos</h2>
-<h2>Cuidados básicos</h2>
-
 <p>✔ Lave a região íntima diariamente com água e sabonete neutro</p>
 <p>✔ Prefira roupas íntimas de algodão</p>
 <p>✔ Evite roupas muito apertadas</p>
@@ -145,7 +143,6 @@ function verificar() {
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" width="90">
 <h2>Sinais de alerta</h2>
-
 <p>⚠ Corrimento com cor diferente (amarelo, verde)</p>
 <p>⚠ Cheiro forte ou desagradável</p>
 <p>⚠ Coceira intensa</p>
