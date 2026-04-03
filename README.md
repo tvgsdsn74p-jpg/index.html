@@ -131,20 +131,28 @@ function verificar() {
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/2966/2966488.png" width="90">
 <h2>Cuidados básicos</h2>
-<p>✔ Higiene íntima diária</p>
-<p>✔ Roupas leves</p>
-<p>✔ Evitar produtos fortes</p>
-</div>
+<h2>Cuidados básicos</h2>
+
+<p>✔ Lave a região íntima diariamente com água e sabonete neutro</p>
+<p>✔ Prefira roupas íntimas de algodão</p>
+<p>✔ Evite roupas muito apertadas</p>
+<p>✔ Troque absorventes com frequência</p>
+<p>✔ Evite duchas internas</p>
+<p>✔ Beba bastante água</p>
 </section>
 
 <section id="sintomas"><button onclick="mostrar('inicio')">⬅ Voltar</button>
 <div class="card">
 <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" width="90">
-<h2>Sintomas</h2>
-<p>⚠ Corrimento com odor</p>
-<p>⚠ Coceira</p>
-<p>⚠ Ardência</p>
-</div>
+<h2>Sinais de alerta</h2>
+
+<p>⚠ Corrimento com cor diferente (amarelo, verde)</p>
+<p>⚠ Cheiro forte ou desagradável</p>
+<p>⚠ Coceira intensa</p>
+<p>⚠ Ardência ao urinar</p>
+<p>⚠ Dor durante relação</p>
+
+<p><b>Esses sintomas podem indicar infecções e devem ser avaliados.</b></p>
 </section>
 
 <section id="mitos"><button onclick="mostrar('inicio')">⬅ Voltar</button>
