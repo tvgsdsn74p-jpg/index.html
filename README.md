@@ -127,8 +127,8 @@ function resultado(){
 <h2>Cuidados com a saúde íntima</h2>
 <p>A higiene íntima deve ser feita de forma adequada, utilizando produtos suaves e evitando o uso excessivo de sabonetes íntimos, que podem alterar o equilíbrio natural da região.</p>
 <p>O uso de roupas de algodão é recomendado, pois permite melhor ventilação e reduz a umidade, prevenindo infecções.</p>
-<p>É importante evitar roupas muito apertadas, pois aumentam o calor e a umidade, favorecendo o crescimento de microrganismos.</p>
-<p>Além disso, manter uma alimentação equilibrada e boa hidratação contribui para o bom funcionamento do organismo.</p>
+<p>Evitar roupas muito apertadas, pois aumentam o calor e a umidade, favorecendo o crescimento de microrganismos.</p>
+<p>Manter uma alimentação equilibrada e boa hidratação contribui para o bom funcionamento do organismo.</p>
 </div>
 </section>
 
@@ -154,7 +154,7 @@ function resultado(){
 <p>O uso de preservativo é essencial para evitar infecções sexualmente transmissíveis.</p>
 <p>Consultas regulares ao ginecologista permitem a detecção precoce de doenças.</p>
 <p>Exames preventivos, como o Papanicolau, são fundamentais para prevenir o câncer do colo do útero.</p>
-<p>Evitar a automedicação também é muito importante, pois pode mascarar sintomas e agravar problemas.</p>
+<p>Evitar a automedicação também é muito importante.</p>
 </div>
 </section>
 
@@ -176,12 +176,10 @@ function resultado(){
 
 <!-- SUS -->
 <section id="sus">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FAPNcvSzS8-WXlbQcIKfN9ACxaG1GGaymuUit2SXuw&s" 
-style="width: 220px; display: block; margin: 10px auto;">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5FAPNcvSzS8-WXlbQcIKfN9ACxaG1GGaymuUit2SXuw&s" style="width: 220px; display: block; margin: 10px auto;">
 <div class="card">
 <h2>Absorventes Gratuitos pelo SUS</h2>
-<p>O acesso a absorventes é um direito ligado à saúde, higiene e dignidade...</p>
-<!-- Conteúdo completo já existente aqui -->
+<p>Acesso a absorventes é um direito ligado à saúde, higiene e dignidade...</p>
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
 </section>
@@ -191,7 +189,7 @@ style="width: 220px; display: block; margin: 10px auto;">
 <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/6922254-contraceptivos-conjunto-controle-de-natalidade-ilustracao-para-impressao-fundos-capas-embalagem-cartoes-cartazes-adesivos-textil-e-design-sazonal-isolado-em-fundo-branco-vetor.jpg" style="width: 260px; display: block; margin: 10px auto; border-radius: 10px;">
 <div class="card">
 <h2>Métodos Contraceptivos</h2>
-<!-- Conteúdo completo dos contraceptivos -->
+<p>Conteúdo completo dos métodos contraceptivos...</p>
 <button onclick="mostrar('inicio')">⬅ Voltar</button>
 </div>
 </section>
@@ -202,36 +200,47 @@ style="width: 220px; display: block; margin: 10px auto;">
 <div class="card">
 <h2>Quiz Educativo</h2>
 <p>Teste seus conhecimentos:</p>
+
 <p>1. Higiene íntima é importante?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
+
 <p>2. Automedicação é recomendada?</p>
 <button onclick="responder(false)">Sim</button>
 <button onclick="responder(true)">Não</button>
+
 <p>3. Beber água ajuda na saúde?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
+
 <p>4. Corrimento diferente pode indicar problema?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
+
 <p>5. Dor ao urinar é sinal de alerta?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
+
 <p>6. Preservativo previne doenças?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
+
 <p>7. Consultas médicas são importantes?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
+
 <p>8. Coceira pode indicar problema?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
+
 <p>9. Roupas apertadas podem prejudicar?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
+
 <p>10. Prevenção é importante?</p>
 <button onclick="responder(true)">Sim</button>
 <button onclick="responder(false)">Não</button>
+
 <br><br>
 <button onclick="resultado()">Ver resultado</button>
 <p id="res"></p>
@@ -243,17 +252,17 @@ style="width: 220px; display: block; margin: 10px auto;">
 <div class="card" style="background: #fff3cd;">
 <h2>Projeto de Extensão</h2>
 <h3>Objetivo</h3>
-<p>Promover a educação em saúde da mulher por meio de um site informativo, facilitando o acesso ao conhecimento sobre prevenção, autocuidado e direitos relacionados à saúde.</p>
+<p>Promover a educação em saúde da mulher por meio de um site informativo...</p>
 <h3>Justificativa</h3>
-<p>A falta de informação sobre saúde feminina ainda é um problema que afeta muitas mulheres, especialmente em contextos de vulnerabilidade. Este projeto busca contribuir para a disseminação de conhecimento de forma acessível e digital.</p>
+<p>A falta de informação sobre saúde feminina ainda é um problema...</p>
 <h3>Público-alvo</h3>
-<p>Mulheres jovens e adultas, estudantes e pessoas que buscam informações sobre saúde íntima, métodos contraceptivos e serviços de saúde.</p>
+<p>Mulheres jovens e adultas, estudantes e pessoas que buscam informações...</p>
 <h3>Relação com a ODS 4</h3>
-<p>O projeto está alinhado com a ODS 4 – Educação de Qualidade, promovendo o acesso à informação e incentivando o aprendizado sobre saúde feminina.</p>
+<p>O projeto está alinhado com a ODS 4 – Educação de Qualidade...</p>
 <h3>Impacto Social</h3>
-<p>O projeto contribui para a conscientização, prevenção de doenças e melhoria da qualidade de vida, incentivando o autocuidado e o acesso aos serviços de saúde.</p>
+<p>O projeto contribui para conscientização, prevenção de doenças e melhoria da qualidade de vida...</p>
 <h3>Conclusão</h3>
-<p>O uso da tecnologia como ferramenta educativa permite ampliar o alcance da informação e promover mudanças positivas na sociedade, especialmente na área da saúde da mulher.</p>
+<p>O uso da tecnologia como ferramenta educativa permite ampliar o alcance da informação...</p>
 <h3>Referências</h3>
 <p>Ministério da Saúde</p>
 <p>Organização Mundial da Saúde (OMS)</p>
