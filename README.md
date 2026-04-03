@@ -153,9 +153,8 @@ function resultado(){
 <p>Evitar a automedicação também é muito importante, pois pode mascarar sintomas e agravar problemas.</p>
 
 </div>
-</section>
 
-<section id="quiz">
+<div id="quiz" class="conteudo">
 <img class="banner" src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
 <div class="card">
 <h2>Quiz Educativo</h2>
