@@ -42,6 +42,7 @@ header p { margin-top:5px; }
 /* ===== Seções ===== */
 .section {
     padding: 20px;
+    scroll-margin-bottom: 120px;
 }
 .card {
     background: white;
