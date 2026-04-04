@@ -201,15 +201,76 @@ function verificarQuiz(){
     <img class="banner" src="https://png.pngtree.com/png-clipart/20201208/original/pngtree-female-reproductive-system-health-hand-drawn-png-image_5518539.jpg" alt="Sistema Reprodutor">
     <div class="card">
         <h2>Sistema Reprodutor Feminino</h2>
-        <p>Composto por ovários, trompas, útero e vagina, é responsável pela reprodução, produção hormonal e ciclo menstrual.</p>
-        <ul>
-            <li>Ovários: produzem óvulos e hormônios.</li>
-            <li>Trompas de Falópio: transporte do óvulo até o útero.</li>
-            <li>Útero: desenvolvimento do bebê.</li>
-            <li>Vagina: canal de parto e órgão de relação sexual.</li>
-        </ul>
-    </div>
+
+<p>Clique em cada parte para aprender mais 👇</p>
+
+<style>
+.acordeao {
+    background: #f8bbd0;
+    color: #880e4f;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.painel {
+    display: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+</style>
+
+<button class="acordeao">Ovários</button>
+<div class="painel">
+<p>Os ovários produzem os óvulos e hormônios como estrogênio e progesterona. São responsáveis pela ovulação em cada ciclo menstrual.</p>
 </div>
+
+<button class="acordeao">Trompas de Falópio</button>
+<div class="painel">
+<p>São responsáveis por transportar o óvulo até o útero. É geralmente onde ocorre a fecundação.</p>
+</div>
+
+<button class="acordeao">Útero</button>
+<div class="painel">
+<p>Órgão onde ocorre o desenvolvimento do bebê. O endométrio é eliminado na menstruação quando não há gravidez.</p>
+</div>
+
+<button class="acordeao">Vagina</button>
+<div class="painel">
+<p>Canal que liga o útero ao exterior. Atua na menstruação, relação sexual e parto.</p>
+</div>
+
+<button class="acordeao">Clitóris</button>
+<div class="painel">
+<p>Órgão altamente sensível responsável pelo prazer sexual. Possui milhares de terminações nervosas.</p>
+</div>
+
+<button class="acordeao">Hímen</button>
+<div class="painel">
+<p>Membrana fina na entrada da vagina. Pode variar de forma e elasticidade e não define virgindade.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("acordeao");
+for (var i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        this.classList.toggle("ativo");
+        var painel = this.nextElementSibling;
+        if (painel.style.display === "block") {
+            painel.style.display = "none";
+        } else {
+            painel.style.display = "block";
+        }
+    }
+}
+</script>
 
 <!-- ===== ABSORVENTES SUS (ATUALIZADO COMPLETO) ===== -->
 <div class="section" id="sus">
