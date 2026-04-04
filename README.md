@@ -54,21 +54,7 @@ header p { margin-top:5px; }
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-<!-- ===== DÚVIDAS ===== -->
-<div class="section" id="duvidas">
-    ...
-</div>
-        <h2>💬 Tirar Dúvidas</h2>
-        <p>Este formulário é anônimo. Envie sua dúvida com segurança 💖</p>
 
-        <iframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLScpEDQnLimCVNfT1gR5rDJN0pbk1Vz32E5c79Oc0Kg8c7SXnA/viewform?embedded=true" 
-            width="100%" 
-            height="600" 
-            frameborder="0">
-        </iframe>
-    </div>
-</div>
 /* ===== Menu de Navegação ===== */
 nav {
     display: flex;
