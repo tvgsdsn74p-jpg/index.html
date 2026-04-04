@@ -343,5 +343,24 @@ document.getElementById("abrir-duvidas").addEventListener("click", function() {
     document.getElementById("duvidas-tab").scrollIntoView({ behavior: 'smooth' });
 });
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("abrir-duvidas").addEventListener("click", function() {
+
+        // Esconde todas as abas
+        var tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach(function(tab) {
+            tab.style.display = "none";
+        });
+
+        // Mostra a aba de dúvidas
+        var aba = document.getElementById("duvidas-tab");
+        if (aba) {
+            aba.style.display = "block";
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    });
+});
+</script>
 </body>
 </html>
