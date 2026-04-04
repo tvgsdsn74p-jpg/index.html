@@ -9,7 +9,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #fff0f5;
-    padding-bottom: 120px; /* espaço para menu fixo */
+    padding-bottom: 120px;
+    <!-- ===== DÚVIDAS ===== -->
+<div class="section" id="duvidas">
+    <div class="card">
+        <h2>💬 Tirar Dúvidas</h2>
+        <p>Este formulário é anônimo. Envie sua dúvida com segurança 💖</p>
+
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLScpEDQnLimCVNfT1gR5rDJN0pbk1Vz32E5c79Oc0Kg8c7SXnA/viewform?embedded=true" 
+            width="100%" 
+            height="600" 
+            frameborder="0">
+        </iframe>
+    </div>
+</div>
+    /* espaço para menu fixo */
     line-height: 1.6;
 }
 h2 { color: #d81b60; margin-top:0; }
@@ -51,7 +66,21 @@ header p { margin-top:5px; }
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+<!-- ===== DÚVIDAS ===== -->
+<div class="section" id="duvidas">
+    ...
+</div>
+        <h2>💬 Tirar Dúvidas</h2>
+        <p>Este formulário é anônimo. Envie sua dúvida com segurança 💖</p>
 
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLScpEDQnLimCVNfT1gR5rDJN0pbk1Vz32E5c79Oc0Kg8c7SXnA/viewform?embedded=true" 
+            width="100%" 
+            height="600" 
+            frameborder="0">
+        </iframe>
+    </div>
+</div>
 /* ===== Menu de Navegação ===== */
 nav {
     display: flex;
@@ -323,23 +352,11 @@ function verificarQuiz(){
     <button onclick="document.querySelectorAll('.section')[9].scrollIntoView()">🧠<span>Mental</span></button>
     <button onclick="document.querySelectorAll('.section')[10].scrollIntoView()">❓<span>Quiz</span></button>    
 </nav>
-<!-- Botão flutuante – colocar AQUI, abaixo das abas -->
-    <button id="abrir-duvidas" class="btn-duvidas">💬 Tirar Dúvida</button>
-
-    <!-- JS do botão – também abaixo -->
-    <script>
-<!-- Botão flutuante para abrir a aba Dúvidas -->
 <button id="abrir-duvidas" class="btn-duvidas">💬 Tirar Dúvida</button>
-<script>
-document.getElementById("abrir-duvidas").addEventListener("click", function() {
-    // Esconde todas as abas
-    var tabs = document.getElementsByClassName("tab-content");
-    for (var i = 0; i < tabs.length; i++) {
-        tabs[i].style.display = "none";
-    }
+
 <script>
 document.getElementById("abrir-duvidas").onclick = function() {
-    mostrarAba('duvidas-tab');
+    document.getElementById("duvidas").scrollIntoView({ behavior: "smooth" });
 };
 </script>
 </body>
