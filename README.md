@@ -211,7 +211,7 @@ function verificarQuiz(){
 </div>
 
 <!-- ===== ABSORVENTES SUS (ATUALIZADO COMPLETO) ===== -->
-<div class="section">
+<div class="section" id="sus">
     <img class="banner" 
      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2DIAQSmd8oja-E__rBwfevvQKLwJtIB_RJ-kywc2Eg&s=10" 
      alt="Programa de Dignidade Menstrual SUS">
