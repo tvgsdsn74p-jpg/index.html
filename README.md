@@ -11,19 +11,7 @@ body {
     background: #fff0f5;
     padding-bottom: 120px;
     <!-- ===== DÚVIDAS ===== -->
-<div class="section" id="duvidas">
-    <div class="card">
-        <h2>💬 Tirar Dúvidas</h2>
-        <p>Este formulário é anônimo. Envie sua dúvida com segurança 💖</p>
 
-        <iframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLScpEDQnLimCVNfT1gR5rDJN0pbk1Vz32E5c79Oc0Kg8c7SXnA/viewform?embedded=true" 
-            width="100%" 
-            height="600" 
-            frameborder="0">
-        </iframe>
-    </div>
-</div>
     /* espaço para menu fixo */
     line-height: 1.6;
 }
