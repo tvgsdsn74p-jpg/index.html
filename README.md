@@ -330,5 +330,18 @@ function verificarQuiz(){
     <script>
 <!-- Botão flutuante para abrir a aba Dúvidas -->
 <button id="abrir-duvidas" class="btn-duvidas">💬 Tirar Dúvida</button>
+<script>
+document.getElementById("abrir-duvidas").addEventListener("click", function() {
+    // Esconde todas as abas
+    var tabs = document.getElementsByClassName("tab-content");
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].style.display = "none";
+    }
+    // Mostra a aba Dúvidas
+    document.getElementById("duvidas-tab").style.display = "block";
+    // Rolagem suave até o topo da aba
+    document.getElementById("duvidas-tab").scrollIntoView({ behavior: 'smooth' });
+});
+</script>
 </body>
 </html>
