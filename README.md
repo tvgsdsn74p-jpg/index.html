@@ -328,5 +328,7 @@ function verificarQuiz(){
 
     <!-- JS do botão – também abaixo -->
     <script>
+<!-- Botão flutuante para abrir a aba Dúvidas -->
+<button id="abrir-duvidas" class="btn-duvidas">💬 Tirar Dúvida</button>
 </body>
 </html>
