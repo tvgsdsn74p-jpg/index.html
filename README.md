@@ -204,7 +204,7 @@ function verificarQuiz(){
 
 <p>Clique em cada parte para aprender mais 👇</p>
 
-<style>
+
 .acordeao {
     background: #f8bbd0;
     color: #880e4f;
@@ -268,9 +268,7 @@ for (var i = 0; i < acc.length; i++) {
         } else {
             painel.style.display = "block";
         }
-    }
-}
-</script>
+
 
 <!-- ===== ABSORVENTES SUS (ATUALIZADO COMPLETO) ===== -->
 <div class="section" id="sus">
