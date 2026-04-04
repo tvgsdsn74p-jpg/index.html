@@ -10,8 +10,17 @@ body {
     margin: 0;
     background: #fff0f5;
     padding-bottom: 120px;
-    <!-- ===== DÚVIDAS ===== -->
-
+    .btn-duvidas {
+    position: fixed;
+    bottom: 80px;
+    right: 15px;
+    background: #d81b60;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 30px;
+}
+    
     /* espaço para menu fixo */
     line-height: 1.6;
 }
