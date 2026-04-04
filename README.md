@@ -322,7 +322,15 @@ function verificarQuiz(){
     <button onclick="document.querySelectorAll('.section')[8].scrollIntoView()">🛡️<span>ISTs</span></button>
     <button onclick="document.querySelectorAll('.section')[9].scrollIntoView()">🧠<span>Mental</span></button>
     <button onclick="document.querySelectorAll('.section')[10].scrollIntoView()">❓<span>Quiz</span></button>
+    
 </nav>
+<!-- Botão flutuante – colocar AQUI, abaixo das abas -->
+    <button id="abrir-duvidas" class="btn-duvidas">💬 Tirar Dúvida</button>
 
+    <!-- JS do botão – também abaixo -->
+    <script>
+        // código JS para abrir a aba Dúvidas
+    </script>
+</body>
 </body>
 </html>
