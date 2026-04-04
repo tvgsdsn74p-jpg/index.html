@@ -4,12 +4,6 @@
 <meta charset="UTF-8">
 <title>Saúde da Mulher - Projeto ODS 4</title>
 <style>
-/* ===== Estilos Globais ===== */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #fff0f5;
-    padding-bottom: 120px;
     .btn-duvidas {
     position: fixed;
     bottom: 80px;
@@ -19,7 +13,14 @@ body {
     border: none;
     padding: 12px 15px;
     border-radius: 30px;
+    z-index: 999;
 }
+/* ===== Estilos Globais ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fff0f5;
+    padding-bottom: 120px;
     
     /* espaço para menu fixo */
     line-height: 1.6;
