@@ -321,6 +321,19 @@ function verificarQuiz(){
     </div>
 </div>
 
+<div class="section" id="duvidas">
+    <div class="card">
+        <h2>💬 Tirar Dúvidas</h2>
+        <p>Este formulário é anônimo. Envie sua dúvida com segurança 💖</p>
+
+        <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLScpEDQnLimCVNfT1gR5rDJN0pbk1Vz32E5c79Oc0Kg8c7SXnA/viewform?embedded=true" 
+            width="100%" 
+            height="600">
+        </iframe>
+    </div>
+</div>
+
 <!-- ===== MENU FIXO ===== -->
 <nav>
     <button onclick="window.scrollTo(0,0)">🏠<span>Início</span></button>
