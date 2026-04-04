@@ -337,30 +337,10 @@ document.getElementById("abrir-duvidas").addEventListener("click", function() {
     for (var i = 0; i < tabs.length; i++) {
         tabs[i].style.display = "none";
     }
-    // Mostra a aba Dúvidas
-    document.getElementById("duvidas-tab").style.display = "block";
-    // Rolagem suave até o topo da aba
-    document.getElementById("duvidas-tab").scrollIntoView({ behavior: 'smooth' });
-});
-</script>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("abrir-duvidas").addEventListener("click", function() {
-
-        // Esconde todas as abas
-        var tabs = document.querySelectorAll(".tab-content");
-        tabs.forEach(function(tab) {
-            tab.style.display = "none";
-        });
-
-        // Mostra a aba de dúvidas
-        var aba = document.getElementById("duvidas-tab");
-        if (aba) {
-            aba.style.display = "block";
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-    });
-});
+document.getElementById("abrir-duvidas").onclick = function() {
+    mostrarAba('duvidas-tab');
+};
 </script>
 </body>
 </html>
