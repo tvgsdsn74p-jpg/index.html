@@ -210,23 +210,65 @@ function verificarQuiz(){
     </div>
 </div>
 
-<!-- ===== ABSORVENTES SUS ===== -->
+<!-- ===== ABSORVENTES SUS (ATUALIZADO COMPLETO) ===== -->
 <div class="section">
     <img class="banner" 
      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2DIAQSmd8oja-E__rBwfevvQKLwJtIB_RJ-kywc2Eg&s=10" 
-     alt="Absorventes SUS" 
-     style="object-fit:contain; max-height:250px;">
+     alt="Programa de Dignidade Menstrual SUS">
+
     <div class="card">
         <h2>Absorventes Gratuitos pelo SUS</h2>
-        <p>Disponíveis para pessoas cadastradas no CadÚnico ou em programas sociais. Garantem dignidade menstrual e acesso à saúde.</p>
+
+        <p>O Programa de Proteção e Promoção da Saúde Menstrual garante o acesso gratuito a absorventes higiênicos para pessoas em situação de vulnerabilidade social. Essa iniciativa busca combater a pobreza menstrual, promovendo saúde, dignidade e permanência escolar.</p>
+
+        <h3>📅 Quando começou?</h3>
+        <p>O programa foi instituído pela Lei nº 14.214, de 2021, e começou a ser implementado em nível nacional a partir de 2023 pelo Sistema Único de Saúde (SUS).</p>
+
+        <h3>👩‍⚕️ Quem tem direito?</h3>
         <ul>
-            <li>Distribuição em escolas públicas e centros de saúde.</li>
-            <li>Previnem infecções e ausências escolares.</li>
-            <li>Importante para adolescentes e mulheres em vulnerabilidade social.</li>
+            <li>Pessoas que menstruam em situação de vulnerabilidade social;</li>
+            <li>Inscritas no CadÚnico (Cadastro Único);</li>
+            <li>Estudantes da rede pública de baixa renda;</li>
+            <li>Pessoas em situação de rua;</li>
+            <li>Pessoas privadas de liberdade ou em medidas socioeducativas.</li>
         </ul>
+
+        <h3>📍 Onde retirar?</h3>
+        <ul>
+            <li>Unidades Básicas de Saúde (UBS);</li>
+            <li>Farmácias credenciadas ao programa;</li>
+            <li>Escolas públicas participantes;</li>
+            <li>Centros de Referência de Assistência Social (CRAS).</li>
+        </ul>
+
+        <h3>📲 Como conseguir?</h3>
+        <ul>
+            <li>Apresentar CPF ou Cartão do SUS;</li>
+            <li>Estar inscrita no CadÚnico (quando necessário);</li>
+            <li>Solicitar diretamente na unidade participante;</li>
+            <li>Em alguns casos, pode ser necessário cadastro ou autorização via aplicativo ou unidade de saúde.</li>
+        </ul>
+
+        <h3>💡 Por que isso é importante?</h3>
+        <ul>
+            <li>Combate a pobreza menstrual;</li>
+            <li>Reduz riscos de infecções;</li>
+            <li>Diminui evasão escolar;</li>
+            <li>Promove dignidade e igualdade;</li>
+            <li>Garante acesso à higiene básica.</li>
+        </ul>
+
+        <h3>⚠️ O que é pobreza menstrual?</h3>
+        <p>É a falta de acesso a produtos de higiene menstrual, saneamento básico e informação adequada. Essa situação pode afetar a saúde física, emocional e social.</p>
+
+        <h3>🏥 Papel do SUS</h3>
+        <p>O SUS é responsável pela distribuição dos absorventes e também pela orientação em saúde, promovendo educação menstrual, prevenção de doenças e acolhimento.</p>
+
+        <h3>📚 Informação também é cuidado</h3>
+        <p>Além da distribuição, o programa incentiva ações educativas sobre saúde menstrual, higiene íntima e autocuidado, especialmente para adolescentes e jovens.</p>
+
     </div>
 </div>
-
 <!-- ===== MÉTODOS CONTRACEPTIVOS ===== -->
 <div class="section">
     <img class="banner" src="https://static.vecteezy.com/ti/vetor-gratis/p1/6922254-contraceptivos-conjunto-controle-de-natalidade-ilustracao-para-impressao-fundos-capas-embalagem-cartoes-cartazes-adesivos-textil-e-design-sazonal-isolado-em-fundo-branco-vetor.jpg" alt="Métodos Contraceptivos">
