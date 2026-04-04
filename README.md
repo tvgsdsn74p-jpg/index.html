@@ -225,8 +225,6 @@ function verificarQuiz(){
     border-radius: 8px;
     margin-top: 5px;
 }
-</style>
-
 <button class="acordeao">Ovários</button>
 <div class="painel">
 <p>Os ovários produzem os óvulos e hormônios como estrogênio e progesterona. São responsáveis pela ovulação em cada ciclo menstrual.</p>
