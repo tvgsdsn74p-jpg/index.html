@@ -132,7 +132,6 @@ nav button span { margin-top: 2px; }
         <p>Trata-se de um trabalho acadêmico voltado para a educação e o impacto social, alinhado à ODS 4 (Educação de Qualidade), ao incentivar o acesso à informação e à conscientização sobre a saúde da mulher.</p>
         <h3>Sobre a autora</h3>
         <p>Meu nome é Beatriz Dias, tenho 21 anos, sou formada como técnica de enfermagem e atualmente estudante da área de Tecnologia da Informação. Minha formação em enfermagem me proporciona conhecimento sólido sobre saúde feminina, garantindo que o conteúdo apresentado seja confiável, relevante e fundamentado em práticas de cuidado real.</p>
-        <p>Este trabalho foi desenvolvido como atividade acadêmica, com foco em educação e impacto social, e está alinhado com a ODS 4 (Educação de Qualidade), incentivando o acesso à informação e à conscientização sobre a saúde feminina.</p>
     </div>
 </div>
 
