@@ -128,9 +128,11 @@ nav button span { margin-top: 2px; }
 <div class="section">
     <img class="banner" src="https://img.freepik.com/vetores-gratis/conceito-de-sistema-reprodutivo-feminino_52683-45450.jpg?semt=ais_hybrid&w=740&q=80" alt="Sistema reprodutor feminino ilustrado">
     <div class="card">
-        <p>Este projeto foi desenvolvido com o objetivo de promover a educação em saúde da mulher...</p>
+         <p>Este projeto foi desenvolvido com o objetivo de promover a educação em saúde da mulher, abordando temas importantes como prevenção, cuidados íntimos, métodos contraceptivos e acesso a serviços de saúde.</p>
+        <p>As informações são apresentadas de forma clara e acessível, contribuindo para o conhecimento, autonomia e bem-estar.</p>
         <h3>Sobre a autora</h3>
-        <p>Meu nome é Beatriz Dias, tenho 21 anos, sou técnica de enfermagem e estudante de TI. Minha formação em enfermagem garante que o conteúdo seja confiável e fundamentado.</p>
+        <p>Meu nome é Beatriz Dias, tenho 21 anos, sou formada como técnica de enfermagem e atualmente estudante da área de Tecnologia da Informação. Minha formação em enfermagem me proporciona conhecimento sólido sobre saúde feminina, garantindo que o conteúdo apresentado seja confiável, relevante e fundamentado em práticas de cuidado real.</p>
+        <p>Este trabalho foi desenvolvido como atividade acadêmica, com foco em educação e impacto social, e está alinhado com a ODS 4 (Educação de Qualidade), incentivando o acesso à informação e à conscientização sobre a saúde feminina.</p>
     </div>
 </div>
 
