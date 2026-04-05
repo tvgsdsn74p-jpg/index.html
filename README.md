@@ -453,24 +453,108 @@ function verificarQuiz(){
 // Inicializa quiz e acordeão
 window.onload = function(){
     gerarQuiz();
-
-    // Acordeão
-    var acc = document.getElementsByClassName("acordeao");
-    for (var i = 0; i < acc.length; i++) {
-        acc[i].onclick = function() {
-            this.classList.toggle("ativo");
-            var painel = this.nextElementSibling;
-            if (painel.style.display === "block") {
-                painel.style.display = "none";
-            } else {
-                painel.style.display = "block";
-            }
-        };
-    }
-
-    // Botão dúvida
-    document.getElementById("abrir-duvidas").onclick = function() {
-        document.getElementById("duvidas").scrollIntoView({ behavior: "smooth" });
+<script>
+/* ===== ACORDEÃO ===== */
+var acc = document.getElementsByClassName("acordeao");
+for (var i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        this.classList.toggle("ativo");
+        var painel = this.nextElementSibling;
+        painel.style.display = (painel.style.display === "block") ? "none" : "block";
     };
+}
+
+/* ===== BOTÃO DÚVIDAS ===== */
+document.getElementById("abrir-duvidas").onclick = function() {
+    document.getElementById("duvidas").scrollIntoView({ behavior: "smooth" });
+};
+
+/* ===== QUIZ ===== */
+const quizData = [
+    { pergunta:"1. Qual é a função dos ovários?", opcoes:["Produzir espermatozoides","Produzir óvulos e hormônios","Armazenar sangue","Controlar digestão"], correta:1 },
+    { pergunta:"2. Qual método contraceptivo é oferecido gratuitamente pelo SUS?", opcoes:["Implante hormonal","DIU hormonal","Pílula anticoncepcional","Anel vaginal particular"], correta:2 },
+    { pergunta:"3. Qual tecido é recomendado para roupas íntimas?", opcoes:["Sintético","Algodão","Plástico","Lã"], correta:1 },
+    { pergunta:"4. Quem tem direito aos absorventes gratuitos do SUS?", opcoes:["Pessoas inscritas no CadÚnico","Qualquer pessoa","Somente homens","Pessoas com carro próprio"], correta:0 },
+    { pergunta:"5. Qual é o órgão onde o bebê se desenvolve?", opcoes:["Vagina","Útero","Ovário","Trompa de Falópio"], correta:1 },
+    { pergunta:"6. Qual método protege contra ISTs?", opcoes:["Preservativo","DIU","Pílula","Implante"], correta:0 },
+    { pergunta:"7. Qual é um método natural de contracepção?", opcoes:["Adesivo hormonal","Tabelinha","DIU de cobre","Injeção hormonal"], correta:1 },
+    { pergunta:"8. Por que roupas apertadas podem ser prejudiciais?", opcoes:["Aumentam umidade e risco de infecção","Melhoram a circulação","Fortalecem músculos","Previnem doenças"], correta:0 },
+    { pergunta:"9. O que significa dignidade menstrual?", opcoes:["Acesso a absorventes, informação e condições adequadas","Ir para escola todos os dias","Tomar banho apenas uma vez","Comprar roupas caras"], correta:0 },
+    { pergunta:"10. Qual órgão transporta o óvulo até o útero?", opcoes:["Vagina","Trompa de Falópio","Ovário","Útero"], correta:1 }
+];
+
+function gerarQuiz(){
+    const container = document.getElementById("quiz-container");
+
+    quizData.forEach((q,i)=>{
+        const div = document.createElement("div");
+        div.className = "card";
+
+        const pergunta = document.createElement("h3");
+        pergunta.textContent = q.pergunta;
+        div.appendChild(pergunta);
+
+        q.opcoes.forEach((op,idx)=>{
+            const label = document.createElement("label");
+            label.className = "quiz-option";
+
+            const input = document.createElement("input");
+            input.type = "radio";
+            input.name = "q"+i;
+            input.value = idx;
+
+            label.appendChild(input);
+            label.appendChild(document.createTextNode(" " + op));
+            div.appendChild(label);
+        });
+
+        // Div para resultado individual
+        const res = document.createElement("div");
+        res.className = "quiz-resposta";
+        res.style.marginTop = "5px";
+        div.appendChild(res);
+
+        container.appendChild(div);
+    });
+
+    // Botão para verificar respostas
+    const btn = document.createElement("button");
+    btn.textContent = "Verificar Respostas";
+    btn.style.marginTop = "10px";
+    btn.onclick = verificarQuiz;
+    container.appendChild(btn);
+
+    const resultado = document.createElement("div");
+    resultado.id = "resultado";
+    resultado.className = "quiz-result";
+    resultado.style.marginTop = "15px";
+    container.appendChild(resultado);
+}
+
+function verificarQuiz(){
+    let score = 0;
+    quizData.forEach((q,i)=>{
+        const selecionado = document.querySelector('input[name="q'+i+'"]:checked');
+        const resDiv = document.querySelectorAll(".quiz-resposta")[i];
+
+        if(!selecionado){
+            resDiv.textContent = "❌ Não respondeu.";
+            resDiv.style.color = "#d81b60";
+        } else if(parseInt(selecionado.value) === q.correta){
+            resDiv.textContent = "✅ Correto!";
+            resDiv.style.color = "#388e3c";
+            score++;
+        } else {
+            resDiv.textContent = "❌ Errado! Resposta correta: " + q.opcoes[q.correta];
+            resDiv.style.color = "#d81b60";
+        }
+    });
+
+    document.getElementById("resultado").textContent = "Você acertou "+score+" de "+quizData.length+" perguntas.";
+}
+
+// Inicializa o quiz quando a página carrega
+window.onload = function(){
+    gerarQuiz();
 };
 </script>
