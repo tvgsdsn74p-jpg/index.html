@@ -154,84 +154,90 @@ nav button span { margin-top: 2px; }
 <div class="section">
     <img class="banner" src="https://png.pngtree.com/png-clipart/20201208/original/pngtree-female-reproductive-system-health-hand-drawn-png-image_5518539.jpg" alt="Sistema Reprodutor">
     <div class="card">
-        <h2>Sistema Reprodutor Feminino</h2>
+         <h2>Sistema Reprodutor Feminino</h2>
         <p>Clique em cada parte para aprender mais 👇</p>
 
         <button class="acordeao">Ovários</button>
-        <div class="painel"><p>Os ovários produzem os óvulos e hormônios como estrogênio e progesterona. São responsáveis pela ovulação em cada ciclo menstrual.</p></div>
+        <div class="painel">
+            <p>Os ovários produzem os óvulos e hormônios como estrogênio e progesterona. São responsáveis pela ovulação em cada ciclo menstrual.</p>
+        </div>
 
         <button class="acordeao">Trompas de Falópio</button>
-        <div class="painel"><p>Transportam o óvulo até o útero e é onde geralmente ocorre a fecundação.</p></div>
+        <div class="painel">
+            <p>Transportam o óvulo até o útero e é onde geralmente ocorre a fecundação.</p>
+        </div>
 
         <button class="acordeao">Útero</button>
-        <div class="painel"><p>Órgão onde ocorre o desenvolvimento do bebê. O endométrio é eliminado na menstruação quando não há gravidez.</p></div>
+        <div class="painel">
+            <p>Órgão onde ocorre o desenvolvimento do bebê. O endométrio é eliminado na menstruação quando não há gravidez.</p>
+        </div>
 
         <button class="acordeao">Vagina</button>
-        <div class="painel"><p>Canal que liga o útero ao exterior. Atua na menstruação, relação sexual e parto.</p></div>
+        <div class="painel">
+            <p>Canal que liga o útero ao exterior. Atua na menstruação, relação sexual e parto.</p>
+        </div>
 
         <button class="acordeao">Clitóris</button>
-        <div class="painel"><p>Órgão altamente sensível responsável pelo prazer sexual. Possui milhares de terminações nervosas.</p></div>
+        <div class="painel">
+            <p>Órgão altamente sensível responsável pelo prazer sexual. Possui milhares de terminações nervosas.</p>
+        </div>
 
         <button class="acordeao">Hímen</button>
-        <div class="painel"><p>Membrana fina na entrada da vagina. Pode variar de forma e elasticidade e não define virgindade.</p></div>
+        <div class="painel">
+            <p>Membrana fina na entrada da vagina. Pode variar de forma e elasticidade e não define virgindade.</p>
+        </div>
     </div>
 </div>
 
-<!-- ===== ABSORVENTES SUS ===== -->
-<div class="section" id="sus">
-    <img class="banner" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2DIAQSmd8oja-E__rBwfevvQKLwJtIB_RJ-kywc2Eg&s=10" alt="Programa de Dignidade Menstrual SUS">
-    <div class="card">
-        <h2>Absorventes Gratuitos pelo SUS</h2>
-        <p>O Programa de Proteção e Promoção da Saúde Menstrual garante acesso gratuito a absorventes higiênicos para pessoas em situação de vulnerabilidade social.</p>
+<script>
+// ===== ACORDEÃO =====
+function initAcordeao() {
+    var acc = document.getElementsByClassName("acordeao");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("ativo"); // muda estilo do botão
+            var painel = this.nextElementSibling; // seleciona painel correspondente
+            if (painel.style.display === "block") {
+                painel.style.display = "none"; // esconde se estiver aberto
+            } else {
+                painel.style.display = "block"; // mostra se estiver fechado
+            }
+        };
+    }
+}
 
-        <h3>📅 Quando começou?</h3>
-        <p>Instituído pela Lei nº 14.214/2021 e implementado nacionalmente a partir de 2023 pelo SUS.</p>
+// chama a função ao carregar a página
+window.onload = function() {
+    initAcordeao();
+};
+</script>
 
-        <h3>👩‍⚕️ Quem tem direito?</h3>
-        <ul>
-            <li>Pessoas menstruantes em situação de vulnerabilidade social</li>
-            <li>Inscritas no CadÚnico</li>
-            <li>Estudantes da rede pública de baixa renda</li>
-            <li>Pessoas em situação de rua</li>
-            <li>Pessoas privadas de liberdade ou em medidas socioeducativas</li>
-        </ul>
-
-        <h3>📍 Onde retirar?</h3>
-        <ul>
-            <li>Unidades Básicas de Saúde (UBS)</li>
-            <li>Farmácias credenciadas</li>
-            <li>Escolas públicas participantes</li>
-            <li>Centros de Referência de Assistência Social (CRAS)</li>
-        </ul>
-
-        <h3>📲 Como conseguir?</h3>
-        <ul>
-            <li>Apresentar CPF ou Cartão do SUS</li>
-            <li>Estar inscrita no CadÚnico (quando necessário)</li>
-            <li>Solicitar diretamente na unidade participante</li>
-            <li>Em alguns casos, cadastro ou autorização via aplicativo/unidade de saúde</li>
-        </ul>
-
-        <h3>💡 Por que isso é importante?</h3>
-        <ul>
-            <li>Combate à pobreza menstrual</li>
-            <li>Reduz riscos de infecções</li>
-            <li>Diminui evasão escolar</li>
-            <li>Promove dignidade e igualdade</li>
-            <li>Garante acesso à higiene básica</li>
-        </ul>
-
-        <h3>⚠️ O que é pobreza menstrual?</h3>
-        <p>Falta de acesso a produtos de higiene menstrual, saneamento básico e informação adequada, afetando saúde física, emocional e social.</p>
-
-        <h3>🏥 Papel do SUS</h3>
-        <p>Distribui absorventes, promove educação menstrual, prevenção de doenças e acolhimento.</p>
-
-        <h3>📚 Informação também é cuidado</h3>
-        <p>O programa incentiva ações educativas sobre saúde menstrual, higiene íntima e autocuidado, especialmente para adolescentes e jovens.</p>
-    </div>
-</div>
-
+<style>
+/* ===== ACORDEÃO ===== */
+.acordeao {
+    background: #f8bbd0;
+    color: #880e4f;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.painel {
+    display: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+.acordeao.ativo {
+    background: #ad1457;
+    color: #fff;
+}
+</style>
 <!-- ===== MÉTODOS CONTRACEPTIVOS ===== -->
 <div class="section">
     <img class="banner" src="https://static.vecteezy.com/ti/vetor-gratis/p1/6922254-contraceptivos-conjunto-controle-de-natalidade-ilustracao-para-impressao-fundos-capas-embalagem-cartoes-cartazes-adesivos-textil-e-design-sazonal-isolado-em-fundo-branco-vetor.jpg" alt="Métodos Contraceptivos">
