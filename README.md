@@ -155,63 +155,32 @@ nav button span { margin-top: 2px; }
     <img class="banner" src="https://png.pngtree.com/png-clipart/20201208/original/pngtree-female-reproductive-system-health-hand-drawn-png-image_5518539.jpg" alt="Sistema Reprodutor">
     <div class="card">
         <h2>Sistema Reprodutor Feminino</h2>
-        <p>Clique em cada parte para aprender mais 👇</p>
+        <p>Clique nos órgãos para ver informações:</p>
 
         <button class="acordeao">Ovários</button>
         <div class="painel">
-            <p>Os ovários produzem os óvulos e hormônios como estrogênio e progesterona. São responsáveis pela ovulação em cada ciclo menstrual.</p>
+            <p>Produzem os óvulos e hormônios como estrogênio e progesterona. São responsáveis pela ovulação em cada ciclo.</p>
         </div>
 
         <button class="acordeao">Trompas de Falópio</button>
         <div class="painel">
-            <p>Transportam o óvulo até o útero e é onde geralmente ocorre a fecundação.</p>
+            <p>Transportam o óvulo até o útero, local onde geralmente ocorre a fecundação.</p>
         </div>
 
         <button class="acordeao">Útero</button>
         <div class="painel">
-            <p>Órgão onde ocorre o desenvolvimento do bebê. O endométrio é eliminado na menstruação quando não há gravidez.</p>
+            <p>Órgão onde o bebê se desenvolve. O endométrio é eliminado na menstruação quando não há gravidez.</p>
         </div>
 
         <button class="acordeao">Vagina</button>
         <div class="painel">
             <p>Canal que liga o útero ao exterior. Atua na menstruação, relação sexual e parto.</p>
         </div>
-
-        <button class="acordeao">Clitóris</button>
-        <div class="painel">
-            <p>Órgão altamente sensível responsável pelo prazer sexual. Possui milhares de terminações nervosas.</p>
-        </div>
-
-        <button class="acordeao">Hímen</button>
-        <div class="painel">
-            <p>Membrana fina na entrada da vagina. Pode variar de forma e elasticidade e não define virgindade.</p>
-        </div>
     </div>
 </div>
 
-<script>
-// ===== ACORDEÃO =====
-function initAcordeao() {
-    var acc = document.getElementsByClassName("acordeao");
-    for (var i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("ativo"); // muda estilo do botão
-            var painel = this.nextElementSibling;
-            if (painel.style.display === "block") {
-                painel.style.display = "none";
-            } else {
-                painel.style.display = "block";
-            }
-        });
-    }
-}
-
-// chama a função sem sobrescrever outros window.onload
-window.addEventListener("load", initAcordeao);
-</script>
-
+<!-- ===== ESTILOS SIMPLES ===== -->
 <style>
-/* ===== ACORDEÃO ===== */
 .acordeao {
     background: #f8bbd0;
     color: #880e4f;
@@ -223,20 +192,30 @@ window.addEventListener("load", initAcordeao);
     margin-top: 8px;
     border-radius: 8px;
     font-weight: bold;
-    transition: background 0.3s;
+}
+.painel {
+    display: none;
+    padding: 10px;
+    background: #fff;
+    border-radius: 6px;
+    margin-top: 5px;
 }
 .acordeao.ativo {
     background: #ad1457;
     color: #fff;
 }
-.painel {
-    display: none;
-    background: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 5px;
-}
 </style>
+
+<!-- ===== SCRIPT SIMPLES ===== -->
+<script>
+document.querySelectorAll(".acordeao").forEach(btn => {
+    btn.addEventListener("click", function() {
+        this.classList.toggle("ativo");
+        const painel = this.nextElementSibling;
+        painel.style.display = painel.style.display === "block" ? "none" : "block";
+   });
+});
+</script>
 <!-- ===== MÉTODOS CONTRACEPTIVOS ===== -->
 <div class="section">
     <img class="banner" src="https://static.vecteezy.com/ti/vetor-gratis/p1/6922254-contraceptivos-conjunto-controle-de-natalidade-ilustracao-para-impressao-fundos-capas-embalagem-cartoes-cartazes-adesivos-textil-e-design-sazonal-isolado-em-fundo-branco-vetor.jpg" alt="Métodos Contraceptivos">
