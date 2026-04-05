@@ -443,6 +443,11 @@ function verificarQuiz(){
 // 4️⃣ Inicializar quiz
 window.onload = gerarQuiz;
 </script>
-
+<script>
+document.getElementById("abrir-duvidas").addEventListener("click", function() {
+    // Rola suavemente até a seção de dúvidas
+    document.getElementById("duvidas").scrollIntoView({ behavior: "smooth" });
+});
+</script>
 </body>
 </html>
