@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #fff0f5;
-    padding-bottom: 120px; /* espaço para menu fixo */
+    padding-bottom: 120px;
     line-height: 1.6;
 }
 h2 { color: #d81b60; margin-top:0; }
@@ -29,10 +29,7 @@ header {
 header p { margin-top:5px; }
 
 /* ===== SEÇÕES ===== */
-.section {
-    padding: 20px;
-    scroll-margin-bottom: 120px;
-}
+.section { padding: 20px; scroll-margin-bottom: 120px; }
 .card {
     background: white;
     margin: 20px auto;
@@ -117,7 +114,6 @@ nav button span { margin-top: 2px; }
 /* ===== QUIZ ===== */
 .quiz-option { display: block; margin: 8px 0; }
 .quiz-result { margin-top: 15px; font-weight: bold; color:#ad1457; }
-
 </style>
 </head>
 <body onload="gerarQuiz()">
@@ -132,11 +128,9 @@ nav button span { margin-top: 2px; }
 <div class="section">
     <img class="banner" src="https://img.freepik.com/vetores-gratis/conceito-de-sistema-reprodutivo-feminino_52683-45450.jpg?semt=ais_hybrid&w=740&q=80" alt="Sistema reprodutor feminino ilustrado">
     <div class="card">
-        <p>Este projeto foi desenvolvido com o objetivo de promover a educação em saúde da mulher, abordando temas importantes como prevenção, cuidados íntimos, métodos contraceptivos e acesso a serviços de saúde.</p>
-        <p>As informações são apresentadas de forma clara e acessível, contribuindo para o conhecimento, autonomia e bem-estar.</p>
+        <p>Este projeto foi desenvolvido com o objetivo de promover a educação em saúde da mulher...</p>
         <h3>Sobre a autora</h3>
-        <p>Meu nome é Beatriz Dias, tenho 21 anos, sou formada como técnica de enfermagem e atualmente estudante da área de Tecnologia da Informação. Minha formação em enfermagem me proporciona conhecimento sólido sobre saúde feminina, garantindo que o conteúdo apresentado seja confiável, relevante e fundamentado em práticas de cuidado real.</p>
-        <p>Este trabalho foi desenvolvido como atividade acadêmica, com foco em educação e impacto social, e está alinhado com a ODS 4 (Educação de Qualidade), incentivando o acesso à informação e à conscientização sobre a saúde feminina.</p>
+        <p>Meu nome é Beatriz Dias, tenho 21 anos, sou técnica de enfermagem e estudante de TI. Minha formação em enfermagem garante que o conteúdo seja confiável e fundamentado.</p>
     </div>
 </div>
 
@@ -145,12 +139,11 @@ nav button span { margin-top: 2px; }
     <img class="banner" src="https://thumbs.dreamstime.com/b/%C3%ADcones-de-higiene-%C3%ADntima-feminina-menstrua%C3%A7%C3%A3o-menstrual-bem-estar-sa%C3%BAde-prote%C3%A7%C3%A3o-conforto-pureza-mulher-cuidados-%C3%ADntimos-398322790.jpg" alt="Cuidados Íntimos">
     <div class="card">
         <h2>Cuidados com a Saúde Íntima</h2>
-        <p>A higiene íntima correta previne infecções, desconfortos e problemas urinários. Roupas de algodão, sabonetes neutros e troca regular de absorventes são essenciais.</p>
         <ul>
             <li>Evitar duchas internas exageradas.</li>
             <li>Trocar absorventes de 3 a 4 em 4 horas.</li>
             <li>Evitar roupas muito apertadas e sintéticas.</li>
-            <li>Manter hidratação adequada para saúde geral.</li>
+            <li>Manter hidratação adequada.</li>
         </ul>
     </div>
 </div>
@@ -163,34 +156,22 @@ nav button span { margin-top: 2px; }
         <p>Clique em cada parte para aprender mais 👇</p>
 
         <button class="acordeao">Ovários</button>
-        <div class="painel">
-            <p>Os ovários produzem os óvulos e hormônios como estrogênio e progesterona. São responsáveis pela ovulação em cada ciclo menstrual.</p>
-        </div>
+        <div class="painel"><p>Os ovários produzem os óvulos e hormônios como estrogênio e progesterona. São responsáveis pela ovulação em cada ciclo menstrual.</p></div>
 
         <button class="acordeao">Trompas de Falópio</button>
-        <div class="painel">
-            <p>São responsáveis por transportar o óvulo até o útero. É geralmente onde ocorre a fecundação.</p>
-        </div>
+        <div class="painel"><p>Transportam o óvulo até o útero e é onde geralmente ocorre a fecundação.</p></div>
 
         <button class="acordeao">Útero</button>
-        <div class="painel">
-            <p>Órgão onde ocorre o desenvolvimento do bebê. O endométrio é eliminado na menstruação quando não há gravidez.</p>
-        </div>
+        <div class="painel"><p>Órgão onde ocorre o desenvolvimento do bebê. O endométrio é eliminado na menstruação quando não há gravidez.</p></div>
 
         <button class="acordeao">Vagina</button>
-        <div class="painel">
-            <p>Canal que liga o útero ao exterior. Atua na menstruação, relação sexual e parto.</p>
-        </div>
+        <div class="painel"><p>Canal que liga o útero ao exterior. Atua na menstruação, relação sexual e parto.</p></div>
 
         <button class="acordeao">Clitóris</button>
-        <div class="painel">
-            <p>Órgão altamente sensível responsável pelo prazer sexual. Possui milhares de terminações nervosas.</p>
-        </div>
+        <div class="painel"><p>Órgão altamente sensível responsável pelo prazer sexual. Possui milhares de terminações nervosas.</p></div>
 
         <button class="acordeao">Hímen</button>
-        <div class="painel">
-            <p>Membrana fina na entrada da vagina. Pode variar de forma e elasticidade e não define virgindade.</p>
-        </div>
+        <div class="painel"><p>Membrana fina na entrada da vagina. Pode variar de forma e elasticidade e não define virgindade.</p></div>
     </div>
 </div>
 
@@ -199,45 +180,53 @@ nav button span { margin-top: 2px; }
     <img class="banner" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2DIAQSmd8oja-E__rBwfevvQKLwJtIB_RJ-kywc2Eg&s=10" alt="Programa de Dignidade Menstrual SUS">
     <div class="card">
         <h2>Absorventes Gratuitos pelo SUS</h2>
-        <p>O Programa de Proteção e Promoção da Saúde Menstrual garante o acesso gratuito a absorventes higiênicos para pessoas em situação de vulnerabilidade social. Essa iniciativa busca combater a pobreza menstrual, promovendo saúde, dignidade e permanência escolar.</p>
+        <p>O Programa de Proteção e Promoção da Saúde Menstrual garante acesso gratuito a absorventes higiênicos para pessoas em situação de vulnerabilidade social.</p>
+
         <h3>📅 Quando começou?</h3>
-        <p>O programa foi instituído pela Lei nº 14.214, de 2021, e começou a ser implementado em nível nacional a partir de 2023 pelo Sistema Único de Saúde (SUS).</p>
+        <p>Instituído pela Lei nº 14.214/2021 e implementado nacionalmente a partir de 2023 pelo SUS.</p>
+
         <h3>👩‍⚕️ Quem tem direito?</h3>
         <ul>
-            <li>Pessoas que menstruam em situação de vulnerabilidade social;</li>
-            <li>Inscritas no CadÚnico (Cadastro Único);</li>
-            <li>Estudantes da rede pública de baixa renda;</li>
-            <li>Pessoas em situação de rua;</li>
-            <li>Pessoas privadas de liberdade ou em medidas socioeducativas.</li>
+            <li>Pessoas menstruantes em situação de vulnerabilidade social</li>
+            <li>Inscritas no CadÚnico</li>
+            <li>Estudantes da rede pública de baixa renda</li>
+            <li>Pessoas em situação de rua</li>
+            <li>Pessoas privadas de liberdade ou em medidas socioeducativas</li>
         </ul>
+
         <h3>📍 Onde retirar?</h3>
         <ul>
-            <li>Unidades Básicas de Saúde (UBS);</li>
-            <li>Farmácias credenciadas ao programa;</li>
-            <li>Escolas públicas participantes;</li>
-            <li>Centros de Referência de Assistência Social (CRAS).</li>
+            <li>Unidades Básicas de Saúde (UBS)</li>
+            <li>Farmácias credenciadas</li>
+            <li>Escolas públicas participantes</li>
+            <li>Centros de Referência de Assistência Social (CRAS)</li>
         </ul>
+
         <h3>📲 Como conseguir?</h3>
         <ul>
-            <li>Apresentar CPF ou Cartão do SUS;</li>
-            <li>Estar inscrita no CadÚnico (quando necessário);</li>
-            <li>Solicitar diretamente na unidade participante;</li>
-            <li>Em alguns casos, pode ser necessário cadastro ou autorização via aplicativo ou unidade de saúde.</li>
+            <li>Apresentar CPF ou Cartão do SUS</li>
+            <li>Estar inscrita no CadÚnico (quando necessário)</li>
+            <li>Solicitar diretamente na unidade participante</li>
+            <li>Em alguns casos, cadastro ou autorização via aplicativo/unidade de saúde</li>
         </ul>
+
         <h3>💡 Por que isso é importante?</h3>
         <ul>
-            <li>Combate a pobreza menstrual;</li>
-            <li>Reduz riscos de infecções;</li>
-            <li>Diminui evasão escolar;</li>
-            <li>Promove dignidade e igualdade;</li>
-            <li>Garante acesso à higiene básica.</li>
+            <li>Combate à pobreza menstrual</li>
+            <li>Reduz riscos de infecções</li>
+            <li>Diminui evasão escolar</li>
+            <li>Promove dignidade e igualdade</li>
+            <li>Garante acesso à higiene básica</li>
         </ul>
+
         <h3>⚠️ O que é pobreza menstrual?</h3>
-        <p>É a falta de acesso a produtos de higiene menstrual, saneamento básico e informação adequada. Essa situação pode afetar a saúde física, emocional e social.</p>
+        <p>Falta de acesso a produtos de higiene menstrual, saneamento básico e informação adequada, afetando saúde física, emocional e social.</p>
+
         <h3>🏥 Papel do SUS</h3>
-        <p>O SUS é responsável pela distribuição dos absorventes e também pela orientação em saúde, promovendo educação menstrual, prevenção de doenças e acolhimento.</p>
+        <p>Distribui absorventes, promove educação menstrual, prevenção de doenças e acolhimento.</p>
+
         <h3>📚 Informação também é cuidado</h3>
-        <p>Além da distribuição, o programa incentiva ações educativas sobre saúde menstrual, higiene íntima e autocuidado, especialmente para adolescentes e jovens.</p>
+        <p>O programa incentiva ações educativas sobre saúde menstrual, higiene íntima e autocuidado, especialmente para adolescentes e jovens.</p>
     </div>
 </div>
 
@@ -264,10 +253,10 @@ nav button span { margin-top: 2px; }
         <h2>Alimentação e Saúde Feminina</h2>
         <p>Dieta equilibrada influencia hormônios, imunidade e bem-estar menstrual.</p>
         <ul>
-            <li>Ferro e vitamina C: previnem anemia.</li>
-            <li>Cálcio e vitamina D: fortalecem ossos.</li>
-            <li>Ômega 3: melhora saúde cardiovascular.</li>
-            <li>Hidratação: essencial para equilíbrio do corpo.</li>
+            <li>Ferro e vitamina C: previnem anemia</li>
+            <li>Cálcio e vitamina D: fortalecem ossos</li>
+            <li>Ômega 3: melhora saúde cardiovascular</li>
+            <li>Hidratação: essencial para equilíbrio do corpo</li>
         </ul>
     </div>
 </div>
@@ -290,7 +279,7 @@ nav button span { margin-top: 2px; }
 <div class="section">
     <div class="card">
         <h2>Gravidez e Planejamento Familiar</h2>
-        <p>Pré-natal e acompanhamento médico garantem saúde materna e fetal. Planejamento familiar permite decisões conscientes sobre maternidade.</p>
+        <p>Pré-natal e acompanhamento médico garantem saúde materna e fetal.</p>
         <ul>
             <li>Exames periódicos</li>
             <li>Suplementos: ácido fólico, vitaminas</li>
@@ -304,7 +293,6 @@ nav button span { margin-top: 2px; }
 <div class="section">
     <div class="card">
         <h2>Prevenção de ISTs</h2>
-        <p>Uso correto de preservativos, vacinas e exames periódicos são essenciais.</p>
         <ul>
             <li>Preservativos masculino e feminino</li>
             <li>Vacinas: HPV, Hepatite B</li>
@@ -318,7 +306,6 @@ nav button span { margin-top: 2px; }
 <div class="section">
     <div class="card">
         <h2>Saúde Mental</h2>
-        <p>Hormônios e ciclo menstrual influenciam humor e bem-estar emocional. Práticas de relaxamento, exercícios e acompanhamento psicológico são recomendados.</p>
         <ul>
             <li>Exercícios físicos regulares</li>
             <li>Técnicas de respiração e meditação</li>
@@ -341,11 +328,7 @@ nav button span { margin-top: 2px; }
     <div class="card">
         <h2>💬 Tirar Dúvidas</h2>
         <p>Este formulário é anônimo. Envie sua dúvida com segurança 💖</p>
-        <iframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLScpEDQnLimCVNfT1gR5rDJN0pbk1Vz32E5c79Oc0Kg8c7SXnA/viewform?embedded=true" 
-            width="100%" 
-            height="600">
-        </iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpEDQnLimCVNfT1gR5rDJN0pbk1Vz32E5c79Oc0Kg8c7SXnA/viewform?embedded=true" width="100%" height="600"></iframe>
     </div>
 </div>
 
@@ -357,3 +340,30 @@ nav button span { margin-top: 2px; }
     <button onclick="document.querySelectorAll('.section')[3].scrollIntoView()">🩸<span>SUS</span></button>
     <button onclick="document.querySelectorAll('.section')[4].scrollIntoView()">💊<span>Métodos</span></button>
     <button onclick="document.querySelectorAll('.section')[5].scrollIntoView()">🥗<span>Alimentação</span></button>
+    <button onclick="document.querySelectorAll('.section')[6].scrollIntoView()">🧪<span>Exames</span></button>
+    <button onclick="document.querySelectorAll('.section')[7].scrollIntoView()">🤰<span>Gravidez</span></button>
+    <button onclick="document.querySelectorAll('.section')[8].scrollIntoView()">🛡️<span>ISTs</span></button>
+    <button onclick="document.querySelectorAll('.section')[9].scrollIntoView()">🧠<span>Mental</span></button>
+    <button onclick="document.querySelectorAll('.section')[10].scrollIntoView()">❓<span>Quiz</span></button>
+</nav>
+<button id="abrir-duvidas" class="btn-duvidas">💬 Tirar Dúvida</button>
+
+<script>
+/* ===== ACORDEÃO ===== */
+var acc = document.getElementsByClassName("acordeao");
+for (var i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        this.classList.toggle("ativo");
+        var painel = this.nextElementSibling;
+        painel.style.display = (painel.style.display === "block") ? "none" : "block";
+    };
+}
+
+/* ===== BOTÃO DÚVIDAS ===== */
+document.getElementById("abrir-duvidas").onclick = function() {
+    document.getElementById("duvidas").scrollIntoView({ behavior: "smooth" });
+};
+
+/* ===== QUIZ ===== */
+const quizData = [
+    { pergunta:"1. Qual é a função dos ovários?", opcoes:["Produzir espermatozo
