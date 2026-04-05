@@ -154,7 +154,7 @@ nav button span { margin-top: 2px; }
 <div class="section">
     <img class="banner" src="https://png.pngtree.com/png-clipart/20201208/original/pngtree-female-reproductive-system-health-hand-drawn-png-image_5518539.jpg" alt="Sistema Reprodutor">
     <div class="card">
-         <h2>Sistema Reprodutor Feminino</h2>
+        <h2>Sistema Reprodutor Feminino</h2>
         <p>Clique em cada parte para aprender mais 👇</p>
 
         <button class="acordeao">Ovários</button>
@@ -194,22 +194,20 @@ nav button span { margin-top: 2px; }
 function initAcordeao() {
     var acc = document.getElementsByClassName("acordeao");
     for (var i = 0; i < acc.length; i++) {
-        acc[i].onclick = function() {
+        acc[i].addEventListener("click", function() {
             this.classList.toggle("ativo"); // muda estilo do botão
-            var painel = this.nextElementSibling; // seleciona painel correspondente
+            var painel = this.nextElementSibling;
             if (painel.style.display === "block") {
-                painel.style.display = "none"; // esconde se estiver aberto
+                painel.style.display = "none";
             } else {
-                painel.style.display = "block"; // mostra se estiver fechado
+                painel.style.display = "block";
             }
-        };
+        });
     }
 }
 
-// chama a função ao carregar a página
-window.onload = function() {
-    initAcordeao();
-};
+// chama a função sem sobrescrever outros window.onload
+window.addEventListener("load", initAcordeao);
 </script>
 
 <style>
@@ -225,6 +223,11 @@ window.onload = function() {
     margin-top: 8px;
     border-radius: 8px;
     font-weight: bold;
+    transition: background 0.3s;
+}
+.acordeao.ativo {
+    background: #ad1457;
+    color: #fff;
 }
 .painel {
     display: none;
@@ -232,10 +235,6 @@ window.onload = function() {
     padding: 10px;
     border-radius: 8px;
     margin-top: 5px;
-}
-.acordeao.ativo {
-    background: #ad1457;
-    color: #fff;
 }
 </style>
 <!-- ===== MÉTODOS CONTRACEPTIVOS ===== -->
