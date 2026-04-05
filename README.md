@@ -15,6 +15,26 @@
     border-radius: 30px;
     z-index: 999;
 }
+    .acordeao {
+    background: #f8bbd0;
+    color: #880e4f;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    margin-top: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.painel {
+    display: none;
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
 /* ===== Estilos Globais ===== */
 body {
     font-family: Arial, sans-serif;
