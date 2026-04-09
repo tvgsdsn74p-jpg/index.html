@@ -361,10 +361,9 @@ for (var i = 0; i < acc.length; i++) {
 
 /* ===== BOTÃO DÚVIDAS ===== */
 document.getElementById("abrir-duvidas").onclick = function() {
-    document.getElementById("duvidas").scrollIntoView({ behavior: "smooth" });
+        document.getElementById("duvidas").scrollIntoView({ behavior: "smooth" });
 };
 
-/* ===== QUIZ ===== */
 /* ===== QUIZ ===== */
 const quizData = [
     {
