@@ -2,20 +2,40 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Guia de Saúde Feminina</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Saúde da Mulher</title>
 
 <style>
-
-/* ===== ESTILO GERAL ===== */
 body {
     font-family: Arial;
     margin: 0;
     background: #fff0f5;
-    padding-bottom: 80px;
 }
 
+/* MENU */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.menu button {
+    background: none;
+    border: none;
+    color: #d81b60;
+    font-size: 13px;
+    margin: 0 8px;
+}
+
+/* SEÇÕES */
 .section {
-    padding: 20px;
+    padding: 80px 20px;
 }
 
 .card {
@@ -24,185 +44,129 @@ body {
     border-radius: 10px;
 }
 
-/* ===== MENU INFERIOR ===== */
-nav {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: #d81b60;
-    display: flex;
-    overflow-x: auto;
-    z-index: 1000;
-}
-
-nav button {
-    flex: 1;
-    border: none;
-    background: transparent;
-    color: white;
-    padding: 10px;
-    font-size: 12px;
-}
-
-/* ===== BOTÃO DÚVIDA ===== */
-.btn-duvidas {
-    position: fixed;
-    bottom: 70px;
-    right: 15px;
-    background: #d81b60;
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 30px;
-}
-
-/* ===== ACORDEÃO ===== */
+/* ACORDEÃO */
 .acordeao {
     background: #f8bbd0;
-    padding: 10px;
     border: none;
+    padding: 10px;
     width: 100%;
     margin-top: 5px;
 }
 
 .painel {
     display: none;
-    background: white;
     padding: 10px;
+    background: #fff;
 }
 
+/* BOTÃO DÚVIDA */
+.btn-duvidas {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #d81b60;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+/* QUIZ */
+.quiz-pergunta {
+    margin-bottom: 15px;
+}
 </style>
 </head>
 
 <body>
 
-<!-- ===== INÍCIO ===== -->
+<!-- MENU -->
+<nav class="menu">
+<button onclick="ir('inicio')">Início</button>
+<button onclick="ir('cuidados')">Cuidados</button>
+<button onclick="ir('sistema')">Sistema</button>
+<button onclick="ir('sus')">SUS</button>
+<button onclick="ir('quiz')">Quiz</button>
+</nav>
+
+<!-- INÍCIO -->
 <div class="section" id="inicio">
 <div class="card">
-<h2>Guia de Saúde Feminina</h2>
-<p>Seu conteúdo inicial permanece aqui</p>
+<h2>Projeto</h2>
+<p>Este projeto foi criado com o objetivo de promover a educação em saúde da mulher...</p>
 </div>
 </div>
 
-<!-- ===== CUIDADOS ===== -->
-<div class="section" id="cuidados">
+<!-- SISTEMA REPRODUTOR -->
+<div class="section" id="sistema">
 <div class="card">
-<h2>Cuidados</h2>
-<p>Seu conteúdo completo aqui</p>
+<h2>Sistema Reprodutor Feminino</h2>
+
+<button class="acordeao">Ovários</button>
+<div class="painel"><p>Produzem óvulos...</p></div>
+
+<button class="acordeao">Útero</button>
+<div class="painel"><p>Desenvolvimento do bebê...</p></div>
+
 </div>
 </div>
 
-<!-- ===== SUS / DIGNIDADE MENSTRUAL ===== -->
+<!-- SUS -->
 <div class="section" id="sus">
 <div class="card">
-<h2>Dignidade Menstrual (SUS)</h2>
-<p>COLE AQUI seu conteúdo completo do SUS (não apague nada)</p>
+<h2>Dignidade Menstrual</h2>
+<p>O programa garante absorventes gratuitos...</p>
 </div>
 </div>
 
-<!-- ===== MÉTODOS ===== -->
-<div class="section" id="metodos">
-<div class="card">
-<h2>Métodos</h2>
-<p>Seu conteúdo completo</p>
-</div>
-</div>
-
-<!-- ===== ALIMENTAÇÃO ===== -->
-<div class="section" id="alimentacao">
-<div class="card">
-<h2>Alimentação</h2>
-<p>Seu conteúdo completo</p>
-</div>
-</div>
-
-<!-- ===== EXAMES ===== -->
-<div class="section" id="exames">
-<div class="card">
-<h2>Exames</h2>
-<p>Seu conteúdo completo</p>
-</div>
-</div>
-
-<!-- ===== GRAVIDEZ ===== -->
-<div class="section" id="gravidez">
-<div class="card">
-<h2>Gravidez</h2>
-<p>Seu conteúdo completo</p>
-</div>
-</div>
-
-<!-- ===== IST ===== -->
-<div class="section" id="ist">
-<div class="card">
-<h2>IST</h2>
-<p>Seu conteúdo completo</p>
-</div>
-</div>
-
-<!-- ===== SAÚDE MENTAL ===== -->
-<div class="section" id="mental">
-<div class="card">
-<h2>Saúde Mental</h2>
-<p>Seu conteúdo completo</p>
-</div>
-</div>
-
-<!-- ===== QUIZ ===== -->
+<!-- QUIZ -->
 <div class="section" id="quiz">
 <div class="card">
 <h2>Quiz</h2>
-<p>Seu quiz já corrigido continua aqui</p>
+
+<div class="quiz-pergunta">
+<p>1. Onde ocorre a fecundação?</p>
+<label><input type="radio" name="q1" value="0"> Útero</label><br>
+<label><input type="radio" name="q1" value="1"> Trompas</label>
+</div>
+
+<button onclick="corrigirQuiz()">Finalizar</button>
+
+<p id="resultado"></p>
+
 </div>
 </div>
 
-<!-- ===== DÚVIDAS ===== -->
+<!-- DÚVIDAS -->
 <div class="section" id="duvidas">
 <div class="card">
 <h2>Dúvidas</h2>
-<p>Seu formulário aqui</p>
+<p>Formulário aqui...</p>
 </div>
 </div>
 
-<!-- BOTÃO DÚVIDA -->
-<button class="btn-duvidas" id="btnDuvida">Dúvidas</button>
-
-<!-- ===== MENU ===== -->
-<nav class="menu">
-    <button onclick="ir('inicio')">🏠<span>Início</span></button>
-    <button onclick="ir('cuidados')">🧼<span>Cuidados</span></button>
-    <button onclick="ir('sistema')">🧬<span>Sistema</span></button>
-    <button onclick="ir('sus')">🩸<span>SUS</span></button>
-    <button onclick="ir('metodos')">💊<span>Métodos</span></button>
-    <button onclick="ir('alimentacao')">🥗<span>Alimentação</span></button>
-    <button onclick="ir('exames')">🧪<span>Exames</span></button>
-    <button onclick="ir('gravidez')">🤰<span>Gravidez</span></button>
-    <button onclick="ir('ist')">🛡️<span>ISTs</span></button>
-    <button onclick="ir('mental')">🧠<span>Mental</span></button>
-    <button onclick="ir('quiz')">❓<span>Quiz</span></button>
-</nav>
+<button class="btn-duvidas" onclick="ir('duvidas')">💬</button>
 
 <script>
-
-/* ===== FUNÇÃO DE NAVEGAÇÃO ===== */
+// MENU
 function ir(secao){
-    document.getElementById(secao).scrollIntoView({behavior:"smooth"});
+document.getElementById(secao).scrollIntoView({behavior:'smooth'});
 }
 
-/* ===== BOTÃO DÚVIDA ===== */
-document.getElementById("btnDuvida").onclick=function(){
-    ir("duvidas");
-};
-
-/* ===== ACORDEÃO ===== */
-var acc = document.getElementsByClassName("acordeao");
-for (var i = 0; i < acc.length; i++) {
-    acc[i].onclick = function() {
-        var painel = this.nextElementSibling;
-        painel.style.display = painel.style.display === "block" ? "none" : "block";
-    }
+// ACORDEÃO
+document.querySelectorAll(".acordeao").forEach(btn=>{
+btn.onclick=function(){
+let painel=this.nextElementSibling;
+painel.style.display = painel.style.display=="block"?"none":"block";
 }
+});
 
+// QUIZ
+function corrigirQuiz(){
+let pontos=0;
+if(document.querySelector('input[name="q1"]:checked')?.value=="1") pontos++;
+document.getElementById("resultado").innerText="Acertos: "+pontos;
+}
 </script>
 
 </body>
