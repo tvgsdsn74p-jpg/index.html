@@ -365,5 +365,63 @@ document.getElementById("abrir-duvidas").onclick = function() {
 };
 
 /* ===== QUIZ ===== */
+/* ===== QUIZ ===== */
 const quizData = [
-    { pergunta:"1. Qual é a função dos ovários?", opcoes:["Produzir espermatozo
+    {
+        pergunta:"1. Qual é a função dos ovários?",
+        opcoes:["Produzir espermatozoides","Produzir óvulos e hormônios","Armazenar sangue","Filtrar toxinas"],
+        resposta:1
+    },
+    {
+        pergunta:"2. De quanto em quanto tempo deve trocar o absorvente?",
+        opcoes:["1 vez ao dia","A cada 12 horas","A cada 3 a 4 horas","Só quando estiver cheio"],
+        resposta:2
+    },
+    {
+        pergunta:"3. O que previne ISTs?",
+        opcoes:["Pílula","DIU","Preservativo","Chá natural"],
+        resposta:2
+    },
+    {
+        pergunta:"4. Qual exame previne câncer do colo do útero?",
+        opcoes:["Mamografia","Ultrassom","Papanicolau","Raio-x"],
+        resposta:2
+    },
+    {
+        pergunta:"5. O SUS oferece absorventes gratuitos?",
+        opcoes:["Não","Sim","Só em hospitais privados","Apenas para idosos"],
+        resposta:1
+    },
+    {
+        pergunta:"6. O útero tem qual função?",
+        opcoes:["Digestão","Respiração","Gestação","Filtração"],
+        resposta:2
+    },
+    {
+        pergunta:"7. Qual vitamina ajuda na prevenção da anemia?",
+        opcoes:["Vitamina C","Vitamina D","Ferro + Vitamina C","Magnésio"],
+        resposta:2
+    },
+    {
+        pergunta:"8. O que é pobreza menstrual?",
+        opcoes:["Falta de renda apenas","Falta de acesso a higiene menstrual","Doença infecciosa","Tipo de anemia"],
+        resposta:1
+    },
+    {
+        pergunta:"9. Qual método contraceptivo é mais seguro contra ISTs?",
+        opcoes:["DIU","Pílula","Preservativo","Tabelinha"],
+        resposta:2
+    },
+    {
+        pergunta:"10. A saúde mental pode influenciar o ciclo menstrual?",
+        opcoes:["Não","Sim","Só em casos raros","Apenas em adolescentes"],
+        resposta:1
+    }
+];
+
+function gerarQuiz(){
+    const container = document.getElementById("quiz-container");
+
+    quizData.forEach((q, index)=>{
+        let div = document.createElement("div");
+        div.innerHTML = `<p><
