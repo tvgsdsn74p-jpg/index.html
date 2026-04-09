@@ -419,30 +419,35 @@ const quizData = [
 ];
 function gerarQuiz() {
     const container = document.getElementById("quiz-container");
-    let html = "";
 
-    quizData.forEach((q, index) => {
-        html += `<div class="pergunta"><p>${q.pergunta}</p>`;
-        
-        q.opcoes.forEach((opcao, i) => {
-            html += `
-                <label>
-                    <input type="radio" name="q${index}" value="${i}">
-                    ${opcao}
-                </label><br>
-            `;
-        });
-
-        html += `</div><hr>`;
-    });
-
-    html += `<button onclick="verificarRespostas()">Finalizar Quiz</button>`;
-    html += `<div id="resultado"></div>`;
-
-    container.innerHTML = html;
+if (!container) {
+    console.log("Quiz container não encontrado");
+    return;
 }
 
-function verificarRespostas() {
+let html = "";
+
+quizData.forEach((q, index) => {
+    html += `<div><p>${q.pergunta}</p>`;
+    
+    q.opcoes.forEach((opcao, i) => {
+        html += `
+            <label>
+                <input type="radio" name="q${index}" value="${i}">
+                ${opcao}
+            </label><br>
+        `;
+    });
+
+    html += `</div><hr>`;
+});
+
+html += `<button onclick="verificarRespostas()">Finalizar Quiz</button>`;
+html += `<div id="resultado"></div>`;
+
+container.innerHTML = html;
+
+window.verificarRespostas = function () {
     let acertos = 0;
     let resultadoHTML = "";
 
@@ -464,7 +469,10 @@ function verificarRespostas() {
     resultadoHTML += `<h3>Total de acertos: ${acertos} / ${quizData.length}</h3>`;
 
     document.getElementById("resultado").innerHTML = resultadoHTML;
-}
+};
 
-window.onload = gerarQuiz;
+});
 </script>
+
+</body>
+</html>
