@@ -2,451 +2,272 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Guia de Saúde Feminina</title>
+<title>Saúde da Mulher</title>
+
 <style>
-/* ===== GLOBAL ===== */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     margin: 0;
     background: #fff0f5;
     padding-bottom: 120px;
-    line-height: 1.6;
 }
-h2 { color: #d81b60; margin-top:0; }
-h3 { color: #ad1457; margin-bottom:5px; }
-ul { margin-left: 20px; }
-ul li { margin-bottom:6px; }
-button:hover { opacity: 0.8; cursor:pointer; }
 
-/* ===== HEADER ===== */
-header {
-    background: #d81b60;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-header p { margin-top:5px; }
-
-/* ===== SEÇÕES ===== */
-.section { padding: 20px; scroll-margin-bottom: 120px; }
+.section { padding:20px; }
 .card {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 12px;
-    max-width: 900px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-.card:hover { transform: translateY(-3px); }
-.banner {
-    width: 100%;
-    max-height: 250px;
-    object-fit: contain;
-    background: white;
-    margin-bottom: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.caption { font-size: 13px; color: #555; text-align: center; margin-top:5px; }
-
-/* ===== ACORDEÃO ===== */
-.acordeao {
-    background: #f8bbd0;
-    color: #880e4f;
-    cursor: pointer;
-    padding: 12px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    margin-top: 8px;
-    border-radius: 8px;
-    font-weight: bold;
-}
-.painel {
-    display: none;
-    background: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    margin-top: 5px;
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    max-width:900px;
+    margin:auto;
 }
 
-/* ===== MENU FIXO ===== */
+h2 { color:#d81b60; }
+
 nav {
-    display: flex;
-    overflow-x: auto;
-    background: #fff;
-    border-top: 2px solid #eee;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    display:flex;
+    background:#fff;
 }
 nav button {
-    background: none;
-    border: none;
-    font-size: 12px;
-    color: #d81b60;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    min-width: 80px;
-    margin: 0 5px;
-}
-nav button span { margin-top: 2px; }
-
-/* ===== BOTÃO DE DÚVIDA ===== */
-.btn-duvidas {
-    position: fixed;
-    bottom: 80px;
-    right: 15px;
-    background: #d81b60;
-    color: white;
-    border: none;
-    padding: 12px 15px;
-    border-radius: 30px;
-    z-index: 999;
+    flex:1;
+    border:none;
+    background:none;
+    padding:10px;
+    color:#d81b60;
 }
 
-/* ===== QUIZ ===== */
-.quiz-option { display: block; margin: 8px 0; }
-.quiz-result { margin-top: 15px; font-weight: bold; color:#ad1457; }
-</style>
-</head>
-<body onload="gerarQuiz()">
+.btn-duvida {
+    position:fixed;
+    bottom:70px;
+    right:10px;
+    background:#d81b60;
+    color:#fff;
+    border:none;
+    padding:12px;
+    border-radius:50%;
+}
 
-<!-- ===== HEADER ===== -->
-<header>
-    <h1>🌸 Saúde da Mulher</h1>
-    <p>Projeto Educativo - ODS 4 | Educação de Qualidade</p>
-</header>
-
-<!-- ===== INÍCIO ===== -->
-<div class="section">
-    <img class="banner" src="https://img.freepik.com/vetores-gratis/conceito-de-sistema-reprodutivo-feminino_52683-45450.jpg?semt=ais_hybrid&w=740&q=80" alt="Sistema reprodutor feminino ilustrado">
-    <div class="card">
-           <p>Este projeto foi criado com o objetivo de promover a educação em saúde da mulher, apresentando informações de maneira clara e acessível, favorecendo o conhecimento, a autonomia e o bem-estar feminino.</p>
-        <p>Trata-se de um trabalho acadêmico voltado para a educação e o impacto social, alinhado à ODS 4 (Educação de Qualidade), ao incentivar o acesso à informação e à conscientização sobre a saúde da mulher.</p>
-        <h3>Sobre a autora</h3>
-        <p>Meu nome é Beatriz Dias, tenho 21 anos, sou formada como técnica de enfermagem e atualmente estudante da área de Tecnologia da Informação. Minha formação em enfermagem me proporciona conhecimento sólido sobre saúde feminina, garantindo que o conteúdo apresentado seja confiável, relevante e fundamentado em práticas de cuidado real.</p>
-    </div>
-</div>
-
-<!-- ===== CUIDADOS ÍNTIMOS ===== -->
-<div class="section">
-    <img class="banner" src="https://thumbs.dreamstime.com/b/%C3%ADcones-de-higiene-%C3%ADntima-feminina-menstrua%C3%A7%C3%A3o-menstrual-bem-estar-sa%C3%BAde-prote%C3%A7%C3%A3o-conforto-pureza-mulher-cuidados-%C3%ADntimos-398322790.jpg" alt="Cuidados Íntimos">
-    <div class="card">
-        <h2>Cuidados com a Saúde Íntima</h2>
-        <ul>
-            <li>Evitar duchas internas exageradas.</li>
-            <li>Trocar absorventes de 3 a 4 em 4 horas.</li>
-            <li>Evitar roupas muito apertadas e sintéticas.</li>
-            <li>Manter hidratação adequada.</li>
-        </ul>
-    </div>
-</div>
-
-<!-- ===== SISTEMA REPRODUTOR ===== -->
-<div class="section">
-    <img class="banner" src="https://png.pngtree.com/png-clipart/20201208/original/pngtree-female-reproductive-system-health-hand-drawn-png-image_5518539.jpg" alt="Sistema Reprodutor">
-    <div class="card">
-        <h2>Sistema Reprodutor Feminino</h2>
-        <p>Clique nos órgãos para ver informações:</p>
-
-        <button class="acordeao">Ovários</button>
-        <div class="painel">
-            <p>Produzem os óvulos e hormônios como estrogênio e progesterona. São responsáveis pela ovulação em cada ciclo.</p>
-        </div>
-
-        <button class="acordeao">Trompas de Falópio</button>
-        <div class="painel">
-            <p>Transportam o óvulo até o útero, local onde geralmente ocorre a fecundação.</p>
-        </div>
-
-        <button class="acordeao">Útero</button>
-        <div class="painel">
-            <p>Órgão onde o bebê se desenvolve. O endométrio é eliminado na menstruação quando não há gravidez.</p>
-        </div>
-
-        <button class="acordeao">Vagina</button>
-        <div class="painel">
-            <p>Canal que liga o útero ao exterior. Atua na menstruação, relação sexual e parto.</p>
-        </div>
-    </div>
-</div>
-
-<!-- ===== ESTILOS SIMPLES ===== -->
-<style>
+/* acordeão */
 .acordeao {
-    background: #f8bbd0;
-    color: #880e4f;
-    cursor: pointer;
-    padding: 12px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    margin-top: 8px;
-    border-radius: 8px;
-    font-weight: bold;
+    background:#f8bbd0;
+    border:none;
+    padding:10px;
+    width:100%;
+    margin-top:5px;
 }
 .painel {
-    display: none;
-    padding: 10px;
-    background: #fff;
-    border-radius: 6px;
-    margin-top: 5px;
+    display:none;
+    background:#fff;
+    padding:10px;
 }
-.acordeao.ativo {
-    background: #ad1457;
-    color: #fff;
-}
-</style>
 
-<!-- ===== SCRIPT SIMPLES ===== -->
-<script>
-document.querySelectorAll(".acordeao").forEach(btn => {
-    btn.addEventListener("click", function() {
-        this.classList.toggle("ativo");
-        const painel = this.nextElementSibling;
-        painel.style.display = painel.style.display === "block" ? "none" : "block";
-   });
-});
-</script>
-<!-- ===== MÉTODOS CONTRACEPTIVOS ===== -->
-<div class="section">
-    <img class="banner" src="https://static.vecteezy.com/ti/vetor-gratis/p1/6922254-contraceptivos-conjunto-controle-de-natalidade-ilustracao-para-impressao-fundos-capas-embalagem-cartoes-cartazes-adesivos-textil-e-design-sazonal-isolado-em-fundo-branco-vetor.jpg" alt="Métodos Contraceptivos">
-    <div class="card">
-        <h2>Métodos Contraceptivos</h2>
-        <p>Existem métodos oferecidos gratuitamente pelo SUS e outros particulares. O ideal é escolher conforme saúde, idade e planejamento familiar.</p>
-        <ul>
-            <li>Pílulas anticoncepcionais</li>
-            <li>DIU (hormonal e de cobre)</li>
-            <li>Implantes hormonais</li>
-            <li>Preservativos masculino e feminino</li>
-            <li>Métodos naturais (tabelinha, ovulação)</li>
-        </ul>
-        <p>Consulta com ginecologista é fundamental para escolher o método mais adequado.</p>
-    </div>
-</div>
-
-<!-- ===== ALIMENTAÇÃO ===== -->
-<div class="section">
-    <div class="card">
-        <h2>Alimentação e Saúde Feminina</h2>
-        <p>Dieta equilibrada influencia hormônios, imunidade e bem-estar menstrual.</p>
-        <ul>
-            <li>Ferro e vitamina C: previnem anemia</li>
-            <li>Cálcio e vitamina D: fortalecem ossos</li>
-            <li>Ômega 3: melhora saúde cardiovascular</li>
-            <li>Hidratação: essencial para equilíbrio do corpo</li>
-        </ul>
-    </div>
-</div>
-
-<!-- ===== EXAMES PREVENTIVOS ===== -->
-<div class="section">
-    <div class="card">
-        <h2>Exames Preventivos</h2>
-        <p>Essenciais para prevenção de doenças e detecção precoce de problemas de saúde.</p>
-        <ul>
-            <li>Papanicolau: câncer de colo uterino</li>
-            <li>Mamografia: câncer de mama</li>
-            <li>Exames de ISTs: HIV, sífilis, hepatite</li>
-            <li>Check-ups regulares com ginecologista</li>
-        </ul>
-    </div>
-</div>
-
-<!-- ===== GRAVIDEZ ===== -->
-<div class="section">
-    <div class="card">
-        <h2>Gravidez e Planejamento Familiar</h2>
-        <p>Pré-natal e acompanhamento médico garantem saúde materna e fetal.</p>
-        <ul>
-            <li>Exames periódicos</li>
-            <li>Suplementos: ácido fólico, vitaminas</li>
-            <li>Alimentação saudável</li>
-            <li>Apoio psicológico</li>
-        </ul>
-    </div>
-</div>
-
-<!-- ===== PREVENÇÃO DE ISTs ===== -->
-<div class="section">
-    <div class="card">
-        <h2>Prevenção de ISTs</h2>
-        <ul>
-            <li>Preservativos masculino e feminino</li>
-            <li>Vacinas: HPV, Hepatite B</li>
-            <li>Exames regulares e acompanhamento médico</li>
-            <li>Educação sexual e conscientização</li>
-        </ul>
-    </div>
-</div>
-
-<!-- ===== SAÚDE MENTAL ===== -->
-<div class="section">
-    <div class="card">
-        <h2>Saúde Mental</h2>
-        <ul>
-            <li>Exercícios físicos regulares</li>
-            <li>Técnicas de respiração e meditação</li>
-            <li>Apoio psicológico quando necessário</li>
-            <li>Diário do ciclo menstrual</li>
-        </ul>
-    </div>
-</div>
-
-<!-- ===== QUIZ ===== -->
-<div class="section" id="quiz">
-    <div class="card" id="quiz-container">
-        <h2>Quiz - Teste seus conhecimentos</h2>
-        <p>Responda as 10 perguntas sobre saúde da mulher, métodos contraceptivos e cuidados íntimos.</p>
-    </div>
-</div>
-
-<!-- ===== DÚVIDAS ===== -->
-<div class="section" id="duvidas">
-    <div class="card">
-        <h2>💬 Tirar Dúvidas</h2>
-        <p>Este formulário é anônimo. Envie sua dúvida com segurança 💖</p>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpEDQnLimCVNfT1gR5rDJN0pbk1Vz32E5c79Oc0Kg8c7SXnA/viewform?embedded=true" width="100%" height="600"></iframe>
-    </div>
-</div>
-
-<!-- ===== MENU FIXO ===== -->
-<nav>
-    <button onclick="window.scrollTo(0,0)">🏠<span>Início</span></button>
-    <button onclick="document.querySelectorAll('.section')[1].scrollIntoView()">🧼<span>Cuidados</span></button>
-    <button onclick="document.querySelectorAll('.section')[2].scrollIntoView()">🧬<span>Sistema</span></button>
-    <button onclick="document.querySelectorAll('.section')[3].scrollIntoView()">🩸<span>SUS</span></button>
-    <button onclick="document.querySelectorAll('.section')[4].scrollIntoView()">💊<span>Métodos</span></button>
-    <button onclick="document.querySelectorAll('.section')[5].scrollIntoView()">🥗<span>Alimentação</span></button>
-    <button onclick="document.querySelectorAll('.section')[6].scrollIntoView()">🧪<span>Exames</span></button>
-    <button onclick="document.querySelectorAll('.section')[7].scrollIntoView()">🤰<span>Gravidez</span></button>
-    <button onclick="document.querySelectorAll('.section')[8].scrollIntoView()">🛡️<span>ISTs</span></button>
-    <button onclick="document.querySelectorAll('.section')[9].scrollIntoView()">🧠<span>Mental</span></button>
-    <button onclick="document.querySelectorAll('.section')[10].scrollIntoView()">❓<span>Quiz</span></button>
-</nav>
-<button id="abrir-duvidas" class="btn-duvidas">💬 Tirar Dúvida</button>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<title>Quiz Saúde da Mulher</title>
-<style>
-body { font-family: Arial, sans-serif; background: #fff0f5; padding: 20px; }
-h2 { color: #d81b60; }
-.card { background: white; padding: 20px; border-radius: 12px; max-width: 600px; margin: 20px auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-.quiz-option { display: block; margin: 5px 0; }
-.quiz-result { font-weight: bold; color: #ad1457; margin-top: 15px; }
+/* quiz */
+.quiz-option { display:block; margin:5px; }
+.quiz-result { font-weight:bold; }
 </style>
 </head>
+
 <body>
 
-<div class="card" id="quiz-container">
-    <h2>Quiz - Saúde da Mulher</h2>
-    <p>Responda as 10 perguntas:</p>
+<header style="background:#d81b60;color:white;text-align:center;padding:20px;">
+<h1>🌸 Saúde da Mulher</h1>
+</header>
+
+<!-- INTRO -->
+<div class="section">
+<div class="card">
+<p>Este projeto foi criado com o objetivo de promover a educação em saúde da mulher, apresentando informações de maneira clara e acessível, favorecendo o conhecimento, a autonomia e o bem-estar feminino.</p>
+
+<p>Trata-se de um trabalho acadêmico voltado para a educação e o impacto social, alinhado à ODS 4 (Educação de Qualidade).</p>
+
+<h3>Autora</h3>
+<p>Beatriz Dias</p>
+</div>
 </div>
 
+<!-- CUIDADOS -->
+<div class="section">
+<div class="card">
+<h2>Cuidados Íntimos</h2>
+<ul>
+<li>Evitar duchas internas</li>
+<li>Trocar absorventes regularmente</li>
+<li>Usar roupas de algodão</li>
+<li>Manter higiene adequada</li>
+</ul>
+</div>
+</div>
+
+<!-- DIGNIDADE MENSTRUAL COMPLETA -->
+<div class="section">
+<div class="card">
+<h2>Dignidade Menstrual</h2>
+
+<p>A dignidade menstrual refere-se ao direito de toda pessoa menstruante ter acesso a condições adequadas de higiene, produtos menstruais e informação de qualidade.</p>
+
+<h3>Programa no SUS</h3>
+<p>O governo federal criou o Programa de Proteção e Promoção da Saúde e Dignidade Menstrual, que garante distribuição gratuita de absorventes.</p>
+
+<h3>Quem tem direito?</h3>
+<ul>
+<li>Pessoas inscritas no CadÚnico</li>
+<li>Estudantes da rede pública</li>
+<li>Pessoas em situação de vulnerabilidade social</li>
+<li>Pessoas em situação de rua</li>
+<li>Pessoas privadas de liberdade</li>
+</ul>
+
+<h3>Onde retirar?</h3>
+<ul>
+<li>Unidades Básicas de Saúde (UBS)</li>
+<li>Farmácias credenciadas</li>
+<li>CRAS</li>
+<li>Escolas públicas participantes</li>
+</ul>
+
+<h3>Como funciona?</h3>
+<ul>
+<li>Cadastro no CadÚnico</li>
+<li>Apresentação de documento</li>
+<li>Retirada gratuita mensal</li>
+</ul>
+
+<h3>Importância</h3>
+<ul>
+<li>Previne infecções</li>
+<li>Reduz evasão escolar</li>
+<li>Promove dignidade e autoestima</li>
+</ul>
+
+<h3>Fonte</h3>
+<p>Ministério da Saúde e Governo Federal</p>
+
+</div>
+</div>
+
+<!-- SISTEMA REPRODUTOR -->
+<div class="section">
+<div class="card">
+<h2>Sistema Reprodutor</h2>
+
+<button class="acordeao">Ovários</button>
+<div class="painel">Produzem óvulos e hormônios.</div>
+
+<button class="acordeao">Trompas</button>
+<div class="painel">Transportam o óvulo.</div>
+
+<button class="acordeao">Útero</button>
+<div class="painel">Desenvolvimento do bebê.</div>
+
+<button class="acordeao">Vagina</button>
+<div class="painel">Canal de ligação.</div>
+
+<button class="acordeao">Clitóris</button>
+<div class="painel">Prazer sexual.</div>
+
+<button class="acordeao">Hímen</button>
+<div class="painel">Membrana variável.</div>
+
+</div>
+</div>
+
+<!-- QUIZ -->
+<div class="section" id="quiz">
+<div class="card" id="quiz-container">
+<h2>Quiz</h2>
+</div>
+</div>
+
+<!-- DUVIDAS -->
+<div class="section" id="duvidas">
+<div class="card">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpEDQnLimCVNfT1gR5rDJN0pbk1Vz32E5c79Oc0Kg8c7SXnA/viewform?embedded=true" width="100%" height="600"></iframe>
+</div>
+</div>
+
+<!-- MENU -->
+<nav>
+<button onclick="window.scrollTo(0,0)">Início</button>
+<button onclick="document.querySelectorAll('.section')[1].scrollIntoView()">Cuidados</button>
+<button onclick="document.querySelectorAll('.section')[2].scrollIntoView()">Dignidade</button>
+<button onclick="document.querySelectorAll('.section')[3].scrollIntoView()">Sistema</button>
+<button onclick="document.querySelectorAll('.section')[4].scrollIntoView()">Quiz</button>
+</nav>
+
+<button id="btnDuvida" class="btn-duvida">?</button>
+
 <script>
-// 1️⃣ Dados do quiz
-const quizData = [
-    { pergunta:"1. Qual é a função dos ovários?", opcoes:["Produzir espermatozoides","Produzir óvulos e hormônios","Armazenar sangue","Controlar digestão"], correta:1 },
-    { pergunta:"2. Qual método contraceptivo é oferecido gratuitamente pelo SUS?", opcoes:["Implante hormonal","DIU hormonal","Pílula anticoncepcional","Anel vaginal particular"], correta:2 },
-    { pergunta:"3. Qual tecido é recomendado para roupas íntimas?", opcoes:["Sintético","Algodão","Plástico","Lã"], correta:1 },
-    { pergunta:"4. Quem tem direito aos absorventes gratuitos do SUS?", opcoes:["Pessoas inscritas no CadÚnico","Qualquer pessoa","Somente homens","Pessoas com carro próprio"], correta:0 },
-    { pergunta:"5. Qual é o órgão onde o bebê se desenvolve?", opcoes:["Vagina","Útero","Ovário","Trompa de Falópio"], correta:1 },
-    { pergunta:"6. Qual método protege contra ISTs?", opcoes:["Preservativo","DIU","Pílula","Implante"], correta:0 },
-    { pergunta:"7. Qual é um método natural de contracepção?", opcoes:["Adesivo hormonal","Tabelinha","DIU de cobre","Injeção hormonal"], correta:1 },
-    { pergunta:"8. Por que roupas apertadas podem ser prejudiciais?", opcoes:["Aumentam umidade e risco de infecção","Melhoram a circulação","Fortalecem músculos","Previnem doenças"], correta:0 },
-    { pergunta:"9. O que significa dignidade menstrual?", opcoes:["Acesso a absorventes, informação e condições adequadas","Ir para escola todos os dias","Tomar banho apenas uma vez","Comprar roupas caras"], correta:0 },
-    { pergunta:"10. Qual órgão transporta o óvulo até o útero?", opcoes:["Vagina","Trompa de Falópio","Ovário","Útero"], correta:1 }
+
+// acordeão
+document.querySelectorAll(".acordeao").forEach(btn=>{
+btn.onclick=function(){
+let p=this.nextElementSibling;
+p.style.display=p.style.display==="block"?"none":"block";
+};
+});
+
+// botão dúvida
+document.getElementById("btnDuvida").onclick=function(){
+document.getElementById("duvidas").scrollIntoView({behavior:"smooth"});
+};
+
+// quiz
+const perguntas=[
+{p:"Função dos ovários?",o:["Hormônios","Digestão","Respiração"],c:0},
+{p:"Proteção IST?",o:["DIU","Preservativo","Pílula"],c:1},
+{p:"Tecido ideal?",o:["Algodão","Plástico","Lã"],c:0},
+{p:"Órgão bebê?",o:["Útero","Ovário","Vagina"],c:0},
+{p:"Transporte óvulo?",o:["Trompa","Útero","Ovário"],c:0},
+{p:"Método natural?",o:["Tabelinha","DIU","Implante"],c:0},
+{p:"Dignidade menstrual?",o:["Absorvente","Roupa","Nada"],c:0},
+{p:"Evitar infecção?",o:["Higiene","Nada","Roupas apertadas"],c:0},
+{p:"Consulta médica?",o:["Importante","Inútil","Opcional"],c:0},
+{p:"Hormônio?",o:["Estrogênio","Insulina","Adrenalina"],c:0}
 ];
 
-// 2️⃣ Função para gerar quiz
-function gerarQuiz(){
-    const container = document.getElementById("quiz-container");
+let quiz=document.getElementById("quiz-container");
 
-    quizData.forEach((q,i)=>{
-        const div = document.createElement("div");
-        div.className = "card";
-
-        const pergunta = document.createElement("h3");
-        pergunta.textContent = q.pergunta;
-        div.appendChild(pergunta);
-
-        q.opcoes.forEach((op,idx)=>{
-            const label = document.createElement("label");
-            label.className = "quiz-option";
-
-            const input = document.createElement("input");
-            input.type = "radio";
-            input.name = "q"+i;
-            input.value = idx;
-
-            label.appendChild(input);
-            label.appendChild(document.createTextNode(" " + op));
-            div.appendChild(label);
-        });
-
-        // Div para resultado individual
-        const res = document.createElement("div");
-        res.className = "quiz-resposta";
-        div.appendChild(res);
-
-        container.appendChild(div);
-    });
-
-    // Botão para verificar respostas
-    const btn = document.createElement("button");
-    btn.textContent = "Verificar Respostas";
-    btn.onclick = verificarQuiz;
-    btn.style.marginTop = "10px";
-    container.appendChild(btn);
-
-    // Resultado final
-    const resultado = document.createElement("div");
-    resultado.id = "resultado";
-    resultado.className = "quiz-result";
-    container.appendChild(resultado);
-}
-
-// 3️⃣ Função para verificar respostas
-function verificarQuiz(){
-    let score = 0;
-    quizData.forEach((q,i)=>{
-        const selecionado = document.querySelector('input[name="q'+i+'"]:checked');
-        const resDiv = document.querySelectorAll(".quiz-resposta")[i];
-
-        if(!selecionado){
-            resDiv.textContent = "❌ Não respondeu.";
-            resDiv.style.color = "#d81b60";
-        } else if(parseInt(selecionado.value) === q.correta){
-            resDiv.textContent = "✅ Correto!";
-            resDiv.style.color = "#388e3c";
-            score++;
-        } else {
-            resDiv.textContent = "❌ Errado! Resposta correta: " + q.opcoes[q.correta];
-            resDiv.style.color = "#d81b60";
-        }
-    });
-
-    document.getElementById("resultado").textContent = "Você acertou "+score+" de "+quizData.length+" perguntas.";
-}
-
-// 4️⃣ Inicializar quiz
-window.onload = gerarQuiz;
-</script>
-<script>
-document.getElementById("abrir-duvidas").addEventListener("click", function() {
-    // Rola suavemente até a seção de dúvidas
-    document.getElementById("duvidas").scrollIntoView({ behavior: "smooth" });
+perguntas.forEach((q,i)=>{
+let div=document.createElement("div");
+div.innerHTML="<p>"+q.p+"</p>";
+q.o.forEach((op,j)=>{
+div.innerHTML+=`<label><input type="radio" name="q${i}" value="${j}">${op}</label><br>`;
 });
+let res=document.createElement("div");
+res.className="quiz-result";
+div.appendChild(res);
+quiz.appendChild(div);
+});
+
+let btn=document.createElement("button");
+btn.innerText="Ver resultado";
+
+btn.onclick=function(){
+let acertos=0;
+
+perguntas.forEach((q,i)=>{
+let r=document.querySelector(`input[name=q${i}]:checked`);
+let res=document.querySelectorAll(".quiz-result")[i];
+
+if(!r){
+res.innerHTML="❌ Não respondeu";
+}
+else if(parseInt(r.value)===q.c){
+res.innerHTML="✅ Correto";
+acertos++;
+}else{
+res.innerHTML="❌ Errado";
+}
+});
+
+alert("Acertos: "+acertos);
+};
+
+quiz.appendChild(btn);
+
 </script>
+
 </body>
 </html>
