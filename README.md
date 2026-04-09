@@ -417,9 +417,54 @@ const quizData = [
         resposta: 1
     }
 ];
-function gerarQuiz(){
+function gerarQuiz() {
     const container = document.getElementById("quiz-container");
+    let html = "";
 
-    quizData.forEach((q, index)=>{
-        let div = document.createElement("div");
-        div.innerHTML = `<p><
+    quizData.forEach((q, index) => {
+        html += `<div class="pergunta"><p>${q.pergunta}</p>`;
+        
+        q.opcoes.forEach((opcao, i) => {
+            html += `
+                <label>
+                    <input type="radio" name="q${index}" value="${i}">
+                    ${opcao}
+                </label><br>
+            `;
+        });
+
+        html += `</div><hr>`;
+    });
+
+    html += `<button onclick="verificarRespostas()">Finalizar Quiz</button>`;
+    html += `<div id="resultado"></div>`;
+
+    container.innerHTML = html;
+}
+
+function verificarRespostas() {
+    let acertos = 0;
+    let resultadoHTML = "";
+
+    quizData.forEach((q, index) => {
+        const resposta = document.querySelector(`input[name="q${index}"]:checked`);
+
+        if (resposta) {
+            if (parseInt(resposta.value) === q.resposta) {
+                acertos++;
+                resultadoHTML += `<p style="color:green;">✔ ${q.pergunta}</p>`;
+            } else {
+                resultadoHTML += `<p style="color:red;">✖ ${q.pergunta}</p>`;
+            }
+        } else {
+            resultadoHTML += `<p style="color:orange;">⚠ ${q.pergunta} (não respondida)</p>`;
+        }
+    });
+
+    resultadoHTML += `<h3>Total de acertos: ${acertos} / ${quizData.length}</h3>`;
+
+    document.getElementById("resultado").innerHTML = resultadoHTML;
+}
+
+window.onload = gerarQuiz;
+</script>
