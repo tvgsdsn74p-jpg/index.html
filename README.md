@@ -316,10 +316,12 @@ nav button span { margin-top: 2px; }
 </div>
 
 <!-- ===== QUIZ ===== -->
-<div class="section" id="quiz">
-  <div id="quiz-container"></div>
-        <h2>Quiz - Teste seus conhecimentos</h2>
-        <p>Responda as 10 perguntas sobre saúde da mulher, métodos contraceptivos e cuidados íntimos.</p>
+<div class="section">
+    <div class="card">
+        <h2>Quiz</h2>
+
+        <div id="quiz-container"></div>
+
     </div>
 </div>
 
