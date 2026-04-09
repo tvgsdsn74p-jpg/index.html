@@ -365,6 +365,7 @@ document.getElementById("abrir-duvidas").onclick = function() {
 };
 
 /* ===== QUIZ ===== */
+
 const quizData = [
     {
         pergunta: "1. Qual é a função dos ovários?",
@@ -417,37 +418,39 @@ const quizData = [
         resposta: 1
     }
 ];
+
 function gerarQuiz() {
     const container = document.getElementById("quiz-container");
 
-if (!container) {
-    console.log("Quiz container não encontrado");
-    return;
-}
+    if (!container) {
+        console.log("Quiz container não encontrado");
+        return;
+    }
 
-let html = "";
+    let html = "";
 
-quizData.forEach((q, index) => {
-    html += `<div><p>${q.pergunta}</p>`;
-    
-    q.opcoes.forEach((opcao, i) => {
-        html += `
-            <label>
-                <input type="radio" name="q${index}" value="${i}">
-                ${opcao}
-            </label><br>
-        `;
+    quizData.forEach((q, index) => {
+        html += `<div><p>${q.pergunta}</p>`;
+        
+        q.opcoes.forEach((opcao, i) => {
+            html += `
+                <label>
+                    <input type="radio" name="q${index}" value="${i}">
+                    ${opcao}
+                </label><br>
+            `;
+        });
+
+        html += `</div><hr>`;
     });
 
-    html += `</div><hr>`;
-});
+    html += `<button onclick="verificarRespostas()">Finalizar Quiz</button>`;
+    html += `<div id="resultado"></div>`;
 
-html += `<button onclick="verificarRespostas()">Finalizar Quiz</button>`;
-html += `<div id="resultado"></div>`;
+    container.innerHTML = html;
+}
 
-container.innerHTML = html;
-
-window.verificarRespostas = function () {
+function verificarRespostas() {
     let acertos = 0;
     let resultadoHTML = "";
 
