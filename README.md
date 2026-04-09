@@ -168,17 +168,18 @@ nav button {
 <button class="btn-duvidas" id="btnDuvida">Dúvidas</button>
 
 <!-- ===== MENU ===== -->
-<nav>
-<button onclick="ir('inicio')">🏠</button>
-<button onclick="ir('cuidados')">🧼</button>
-<button onclick="ir('sus')">🏥</button>
-<button onclick="ir('metodos')">💊</button>
-<button onclick="ir('alimentacao')">🥗</button>
-<button onclick="ir('exames')">🧪</button>
-<button onclick="ir('gravidez')">🤰</button>
-<button onclick="ir('ist')">⚠️</button>
-<button onclick="ir('mental')">🧠</button>
-<button onclick="ir('quiz')">❓</button>
+<nav class="menu">
+    <button onclick="ir('inicio')">🏠<span>Início</span></button>
+    <button onclick="ir('cuidados')">🧼<span>Cuidados</span></button>
+    <button onclick="ir('sistema')">🧬<span>Sistema</span></button>
+    <button onclick="ir('sus')">🩸<span>SUS</span></button>
+    <button onclick="ir('metodos')">💊<span>Métodos</span></button>
+    <button onclick="ir('alimentacao')">🥗<span>Alimentação</span></button>
+    <button onclick="ir('exames')">🧪<span>Exames</span></button>
+    <button onclick="ir('gravidez')">🤰<span>Gravidez</span></button>
+    <button onclick="ir('ist')">🛡️<span>ISTs</span></button>
+    <button onclick="ir('mental')">🧠<span>Mental</span></button>
+    <button onclick="ir('quiz')">❓<span>Quiz</span></button>
 </nav>
 
 <script>
