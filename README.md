@@ -473,7 +473,7 @@ function verificarRespostas() {
 
     document.getElementById("resultado").innerHTML = resultadoHTML;
 
-}
+
 </script>
 
 </body>
