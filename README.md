@@ -116,7 +116,7 @@ nav button span { margin-top: 2px; }
 .quiz-result { margin-top: 15px; font-weight: bold; color:#ad1457; }
 </style>
 </head>
-<body onload="gerarQuiz()">
+<body>
 
 <!-- ===== HEADER ===== -->
 <header>
