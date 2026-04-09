@@ -473,6 +473,9 @@ function verificarRespostas() {
 
     document.getElementById("resultado").innerHTML = resultadoHTML;
 }
+    window.onload = function() {
+    gerarQuiz();
+};
 </script>
 
 </body>
