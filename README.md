@@ -472,7 +472,6 @@ function verificarRespostas() {
     resultadoHTML += `<h3>Total de acertos: ${acertos} / ${quizData.length}</h3>`;
 
     document.getElementById("resultado").innerHTML = resultadoHTML;
-};
 
 }
 </script>
